@@ -31,6 +31,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
+          # BASE_PATH must be "/" when using a custom domain (e.g. www.bettercallbot.com).
+          # If you ever remove the custom domain and go back to GitHub Pages subdirectory,
+          # change this to the repo name, e.g. /bettercallbot/
           BASE_PATH: /
 
       - name: Upload Pages artifact
