@@ -31,11 +31,11 @@ export default function Home() {
       url: siteUrl,
       logo: {
         '@type': 'ImageObject',
-        url: 'https://static.readdy.ai/image/ab3e1b6ace2898e0dfaefcf807841ab1/a1767f79319f0af56dbc7e60ec0f1140.png',
-        width: 200,
-        height: 60,
+        url: 'https://www.bettercallbot.com/og-image.png',
+        width: 1200,
+        height: 630,
       },
-      image: 'https://static.readdy.ai/image/ab3e1b6ace2898e0dfaefcf807841ab1/1e41620c00be76f39072838ff844a253.jpeg',
+      image: 'https://www.bettercallbot.com/og-image.png',
       description: 'Better Call Bot (BCB) is an AI automation consultancy replacing repetitive tasks, slow responses, and manual processes with intelligent systems. Save 400+ hours with AI automation. Book a free audit today.',
       email: 'hello@bettercallbot.ai',
       address: {
