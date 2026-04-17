@@ -1,29 +1,38 @@
 User-agent: *
 Allow: /
-Sitemap: https://usmannkashmirwala-arch.github.io/bettercallbot/sitemap.xml
+Sitemap: https://www.bettercallbot.com/sitemap.xml
 
-# OpenAI / ChatGPT
-User-agent: GPTBot
+# ── Search Engines ──────────────────────────────────────────
+User-agent: Googlebot
 Allow: /
 
-# OpenAI browsing plugin
-User-agent: ChatGPT-User
+User-agent: Bingbot
 Allow: /
 
-# Google Gemini / Bard
-User-agent: Google-Extended
+User-agent: DuckDuckBot
 Allow: /
+
+# ── AI Answer Engines & LLM Crawlers ────────────────────────
 
 # Anthropic Claude
 User-agent: anthropic-ai
 Allow: /
 
-# Anthropic Claude (alternate)
 User-agent: ClaudeBot
 Allow: /
 
-# Common Crawl (used by many LLMs for training)
-User-agent: CCBot
+# OpenAI ChatGPT (training + browsing)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Google Gemini / Vertex AI
+User-agent: Google-Extended
 Allow: /
 
 # Perplexity AI
@@ -34,20 +43,19 @@ Allow: /
 User-agent: FacebookBot
 Allow: /
 
-# Apple AI
-User-agent: Applebot-Extended
+# Apple Intelligence
+User-agent: Applebot
 Allow: /
 
-# Cohere AI
-User-agent: cohere-ai
+User-agent: Applebot-Extended
 Allow: /
 
 # Amazon Alexa / AI
 User-agent: Amazonbot
 Allow: /
 
-# Bytedance / Doubao
-User-agent: Bytespider
+# Cohere AI
+User-agent: cohere-ai
 Allow: /
 
 # Mistral AI
@@ -56,4 +64,27 @@ Allow: /
 
 # You.com
 User-agent: YouBot
+Allow: /
+
+# Bytedance / Doubao
+User-agent: Bytespider
+Allow: /
+
+# Common Crawl (training data for many LLMs)
+User-agent: CCBot
+Allow: /
+
+# Diffbot (structured data extraction for AI)
+User-agent: Diffbot
+Allow: /
+
+# Timpibot (AI search)
+User-agent: Timpibot
+Allow: /
+
+# Omgilibot / Webz.io (news/AI datasets)
+User-agent: omgilibot
+Allow: /
+
+User-agent: omgili
 Allow: /
