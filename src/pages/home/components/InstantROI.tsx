@@ -15,7 +15,7 @@ export default function InstantROI() {
 
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
         <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#111111] uppercase">
-          THE NUMBERS<br />DON&apos;T <span className="text-[#E63329]">LIE</span>
+          THE NUMBERS<br />TELL THE <span className="text-[#E63329]">TRUTH</span>
         </h2>
         <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-sm leading-relaxed">
           Stop measuring automation by cost saved. Measure it by what it unlocks : capacity, speed, and scale without headcount.
