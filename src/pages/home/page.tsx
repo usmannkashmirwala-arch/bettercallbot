@@ -211,9 +211,8 @@ export default function Home() {
           INTRODUCE
         </p>
         <h2 className="font-['Anton'] text-[clamp(36px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-8">
-          You Know AI Is<br />Changing Everything.<br />
-          YOU JUST DON&apos;T KNOW WHERE<br />
-          IT <span className="text-[#E63329]">APPLIES TO YOU.</span>
+          You Know AI Is Changing Everything.<br />
+          YOU JUST DON&apos;T KNOW WHERE IT <span className="text-[#E63329]">APPLIES TO YOU.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC] pt-8">
           <div className="md:pr-10 md:border-r border-[#CCCCCC] pb-8 md:pb-0">
