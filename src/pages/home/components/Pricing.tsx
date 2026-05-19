@@ -3,13 +3,13 @@ interface PricingProps {
 }
 
 const features = [
-  'Unlimited agents & automations',
-  'Custom integrations & APIs',
-  'Dedicated POC',
-  'Unlimited changes to Agents',
-  'Weekly monitoring & tuning',
-  'Audit for inefficiencies',
-  'Quarterly business reviews',
+  'Free operational audit before engagement begins',
+  'Custom-built agents — no templates, no off-the-shelf tools',
+  'Custom integrations with your existing stack',
+  'Dedicated point of contact throughout',
+  'Unlimited agent revisions and updates',
+  'Weekly performance monitoring & tuning',
+  'Quarterly business reviews and expansion planning',
 ];
 
 export default function Pricing({ onBookAudit }: PricingProps) {
@@ -24,7 +24,7 @@ export default function Pricing({ onBookAudit }: PricingProps) {
           NO SURPRISES.<br />NO <span className="text-[#E63329]">FLUFF.</span>
         </h2>
         <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-xs leading-relaxed">
-          You know what you&apos;re getting and what you&apos;re paying. That&apos;s the deal.
+          We quote after the audit — not before. That way you only pay for what your business actually needs.
         </p>
       </div>
 
@@ -49,7 +49,7 @@ export default function Pricing({ onBookAudit }: PricingProps) {
               </div>
 
               <p className="font-['DM_Sans'] text-[18px] leading-relaxed text-[#AAAAAA] max-w-sm">
-                Since every business has unique needs and we don't want to overcommit, we only quote a price once we know a little about your work.&nbsp;
+                Every business is different. After your free audit, we scope and price an engagement built around your exact workflows and goals — no guesswork, no generic packages.
               </p>
             </div>
 

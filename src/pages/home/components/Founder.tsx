@@ -34,7 +34,7 @@ export default function Founder() {
 
           <div className="space-y-5 mb-10">
             <p className="font-['DM_Sans'] text-[18px] text-[#333333] leading-relaxed">
-              I find where your time and money is leaking, repetitive tasks, slow responses, manual processes,&nbsp; and replace them with systems that run on their own.
+              I built BCB on a simple idea: most businesses don&apos;t need more AI tools — they need someone to tell them which one actually applies to them. I start with the diagnosis. The build comes after.
             </p>
             <p className="font-['DM_Sans'] text-[18px] text-[#555555] leading-relaxed">
               Built BCB after watching founders burn hours on work that should never touch a human. There&apos;s a smarter way to run a business. I&apos;ll show you exactly where to start.
@@ -49,7 +49,7 @@ export default function Founder() {
             {[
               { label: 'EDUCATION', value: 'LUMS — BSc Economics, Class of \'25' },
               { label: 'BUILT', value: 'AI systems across 8 industries' },
-              { label: 'PHILOSOPHY', value: 'Automation that pays, not tools that impress' },
+              { label: 'PHILOSOPHY', value: 'Diagnose first. Build second. Always.' },
               { label: 'BASED IN', value: 'Pakistan — serving clients globally' },
             ].map((item) => (
               <div key={item.label}>

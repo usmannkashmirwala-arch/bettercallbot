@@ -10,7 +10,7 @@ export default function InstantROI() {
     <section id="roi" className="bg-[#F5F4F0] px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
-        INSTANT ROI
+        THE RESULTS
       </p>
 
       <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
@@ -18,7 +18,7 @@ export default function InstantROI() {
           THE NUMBERS<br />TELL THE <span className="text-[#E63329]">TRUTH</span>
         </h2>
         <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-sm leading-relaxed">
-          Stop measuring automation by cost saved. Measure it by what it unlocks : capacity, speed, and scale without headcount.
+          These are real numbers from real clients. We track ROI from day one because automation that doesn&apos;t pay isn&apos;t automation — it&apos;s overhead.
         </p>
       </div>
 
@@ -47,9 +47,9 @@ export default function InstantROI() {
         <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#ff0000] mb-10">HOW IT WORKS</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC]">
           {[
-            { step: '01', title: 'AUDIT YOUR WORKFLOW', desc: 'We find out where your time and money is leaking — manual tasks, bottlenecks, slow responses.' },
-            { step: '02', title: 'BUILD YOUR SYSTEM', desc: 'We engineer a custom AI stack. No templates. Built specifically for your process and customer base.' },
-            { step: '03', title: 'DEPLOY & SCALE', desc: 'We go live. We monitor, tune, and iterate until the numbers move.' },
+            { step: '01', title: 'AUDIT YOUR OPERATIONS', desc: 'We map your full operations — every manual task, bottleneck, and slow process. We find where AI pays, and where it doesn\'t. No commitment required.' },
+            { step: '02', title: 'PRESCRIBE THE RIGHT AGENT', desc: 'Based on the audit, we tell you exactly which agent to build and what ROI to expect — before a single line of code is written.' },
+            { step: '03', title: 'BUILD, DEPLOY & SCALE', desc: 'We engineer the agent around your exact workflow. No templates. We go live, monitor, and tune until the numbers move.' },
           ].map((item, i) => (
             <div
               key={item.step}

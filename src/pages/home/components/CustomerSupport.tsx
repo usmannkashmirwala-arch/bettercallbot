@@ -3,37 +3,34 @@ export default function CustomerSupport() {
     <section id="customer-support" className="bg-[#111111] px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
-        CUSTOMER SUPPORT AGENT
+        THE CONSULTANCY DIFFERENCE
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
         {/* Left: copy */}
         <div>
           <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#F5F4F0] uppercase mb-6">
-            NEVER MISS<br />ANOTHER <span className="text-[#E63329]">MESSAGE</span>
+            WE DIAGNOSE<br />FIRST. <span className="text-[#E63329]">BUILD</span><br />SECOND.
           </h2>
           <p className="font-['DM_Sans'] text-[18px] text-[#AAAAAA] leading-relaxed mb-5">
-            Your customers don&apos;t wait. They move on. Every unanswered query at 11pm is a sale that went to your competitor.
+            Most businesses get sold AI tools before anyone asks what problem they&apos;re actually solving. A vendor demos a chatbot, it looks impressive, and six months later it&apos;s unused because it didn&apos;t fit the workflow.
           </p>
           <p className="font-['DM_Sans'] text-[18px] text-[#AAAAAA] leading-relaxed mb-8">
-            Our AI Customer Support Agent handles unlimited concurrent conversations — resolving tickets, answering product questions, processing returns, and escalating only when human judgment is genuinely needed.
+            We start differently. Every engagement begins with a free audit of your operations — where time bleeds, where revenue leaks, where humans are doing machine work. Only then do we prescribe the right agent and build it around your exact process.
           </p>
 
           {/* Feature list */}
           <div className="space-y-4 border-t border-[#2A2A2A] pt-8">
             {[
-              '24/7 availability — no shift changes, no sick days',
-              'Trained on your exact product docs & FAQs',
-              'Handles 80%+ of tickets without human input',
-              'Seamless handoff to human agents when needed',
-              'Integrates with all your tools and apps so you dont have to change a thing',
+              'Free audit before any commitment',
+              'We map your workflows, not just your surface symptoms',
+              'We recommend what you need, not what’s most expensive',
+              'Built from scratch around your exact process — no templates',
+              'You understand every part of what’s being built and why',
             ].map((feat) => (
               <div key={feat} className="flex gap-3 items-start">
                 <span className="text-[#D4FF00] mt-0.5 text-sm">→</span>
-                <p
-                  className="font-['DM_Sans'] text-[17px] text-[#CCCCCC]"
-                  dangerouslySetInnerHTML={{ __html: feat }}
-                />
+                <p className="font-['DM_Sans'] text-[17px] text-[#CCCCCC]">{feat}</p>
               </div>
             ))}
           </div>
@@ -50,8 +47,8 @@ export default function CustomerSupport() {
           </div>
           {/* Stat overlay */}
           <div className="absolute bottom-0 left-0 bg-[#D4FF00] px-6 py-5">
-            <p className="font-['Anton'] text-4xl text-[#111111] leading-none">80%</p>
-            <p className="font-['DM_Sans'] text-[11px] tracking-[0.15em] uppercase text-[#111111] mt-1">of all queries and support handled automatically&nbsp;</p>
+            <p className="font-['Anton'] text-4xl text-[#111111] leading-none">8</p>
+            <p className="font-['DM_Sans'] text-[11px] tracking-[0.15em] uppercase text-[#111111] mt-1">INDUSTRIES WITH ACTIVE AI SYSTEMS DEPLOYED</p>
           </div>
         </div>
       </div>

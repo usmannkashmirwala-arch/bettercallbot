@@ -26,7 +26,7 @@ export default function Hero({ onBookAudit }: HeroProps) {
       {/* Top utility bar */}
       <div className="relative z-10 flex items-center justify-between px-6 md:px-12 pt-6 pb-2 mt-16">
         <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
-          AI AUTOMATION SERVICES
+          AI CONSULTANCY
         </span>
         <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
           INNOVATE | AUTOMATE
@@ -47,7 +47,7 @@ export default function Hero({ onBookAudit }: HeroProps) {
 
         {/* Subline */}
         <p className="font-['DM_Sans'] text-base md:text-lg text-[#111111] mt-6 max-w-md leading-relaxed">
-          It&apos;s Time To Innovate &amp; Automate
+          We find where AI applies to your business. Then we build it.
         </p>
 
         {/* CTAs */}

@@ -1,24 +1,24 @@
 const testimonials = [
   {
-    quote: "BCB deployed a lead qualification bot in under two weeks. We went from responding to leads in 48 hours to 4 minutes. Our conversion rate hasn't been the same since.",
+    quote: "Usman audited our sales process before touching anything. Within a week he'd identified exactly where we were bleeding leads. The agent he built fixed it — we went from 48-hour response times to 4 minutes. That's not a tool, that's a diagnosis.",
     name: 'Naveed Ahmed',
     role: 'CEO, UA Travels and Tours',
+    initial: 'N',
+  },
+  {
+    quote: "I was skeptical about AI. What changed my mind wasn't the technology — it was the audit. Usman showed me exactly where we were losing money before he proposed anything. Three months later, all the numbers beat the projection.",
+    name: 'Rafay Kamal',
+    role: 'Founder, The Revival Movement',
     initial: 'R',
   },
   {
-    quote: "I was skeptical about AI automation. Usman walked me through exactly what would be built, what it would cost, and what it would return. Three months later — all numbers beat the projection.",
-    name: 'Rafay Kamal',
-    role: 'Founder, The Revival Movement',
-    initial: 'S',
-  },
-  {
-    quote: "Our client intake was a mess. BCB automated 80% of it. My team reclaimed 30+ hours a week. That's junior lawyer time redirected to billable work.",
+    quote: "BCB didn't come in and pitch us a chatbot. They mapped our entire client intake process, found where the bottlenecks were, and built something that fixed the actual problem. My team reclaimed 30+ hours a week. That's billable hours redirected.",
     name: 'OMAR SHEIKH',
     role: 'Senior Analyst, Atlas Legal Group',
     initial: 'O',
   },
   {
-    quote: "We'd been 'considering' automation for 2 years. BCB made it embarrassingly simple to start. The system paid for itself in the first month.",
+    quote: "Two years of 'we should automate this' and nothing happened — because we didn't know where to start. BCB's audit gave us the answer in one session. The system was live in three weeks and paid for itself in the first month.",
     name: 'FATIMA TAHIR',
     role: 'Operations Head, Resin Marvels',
     initial: 'F',

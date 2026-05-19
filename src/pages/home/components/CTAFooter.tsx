@@ -20,13 +20,13 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
 
         <div className="relative z-10 text-center max-w-4xl mx-auto">
           <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-6">
-            THE FUTURE OF CUSTOMER EXPERIENCE STARTS HERE
+            YOUR COMPETITORS ARE ALREADY USING AI AGENTS
           </p>
           <h2 className="font-['Anton'] text-[clamp(48px,8vw,110px)] leading-[0.88] text-[#F5F4F0] uppercase mb-6">
             STOP DOING IT<br />THE <span className="text-[#D4FF00]">HARD WAY.</span>
           </h2>
           <p className="font-['DM_Sans'] text-[19px] text-[#888888] max-w-xl mx-auto mb-12 leading-relaxed">
-            Every day you run a manual process is a day you&apos;re paying for something AI can do for a fraction of the cost. Book a free audit. Let&apos;s find your leaks — together.
+            Every day you run a manual process is a day you&apos;re falling behind. We&apos;ll audit your operations for free, show you exactly where AI applies, and tell you what it&apos;s worth before you spend a penny.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -63,7 +63,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
               </span>
             </div>
             <p className="font-['DM_Sans'] text-[16px] text-[#888888] leading-relaxed">
-              AI automation for businesses that are serious about scaling. Systems that run — so you don&apos;t have to.
+              AI consultancy for businesses that know AI is changing the game but don&apos;t know where it applies to them. We find it. We build it.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
             <div>
               <p className="font-['DM_Sans'] text-[10px] tracking-[0.2em] uppercase text-[#E63329] mb-4">SERVICES</p>
               <div className="space-y-2">
-                {['Customer Support Agent', 'Lead Qualification Workflow', 'Live Shopify Tracking Workflow', 'Lead Formatting and CRM Workflow'].map((s) => (
+                {['Customer Support Agent', 'Content Writing Agent', 'Financial Ops Agent', 'Book a Free Audit'].map((s) => (
                   <p key={s} className="font-['DM_Sans'] text-[17px] text-[#555555] cursor-pointer hover:text-[#111111]">{s}</p>
                 ))}
               </div>

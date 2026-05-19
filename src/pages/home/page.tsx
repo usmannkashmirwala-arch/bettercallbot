@@ -36,7 +36,7 @@ export default function Home() {
         height: 630,
       },
       image: 'https://www.bettercallbot.com/og-image.png',
-      description: 'Better Call Bot (BCB) is an AI automation consultancy replacing repetitive tasks, slow responses, and manual processes with intelligent systems. Save 400+ hours with AI automation. Book a free audit today.',
+      description: 'Better Call Bot (BCB) is an AI consultancy that helps businesses identify where AI agents apply to their operations, then builds those agents from scratch. We audit first, build second. Book a free audit today.',
       email: 'hello@bettercallbot.ai',
       address: {
         '@type': 'PostalAddress',
@@ -113,10 +113,10 @@ export default function Home() {
         '@type': 'OfferCatalog',
         name: 'AI Automation Services',
         itemListElement: [
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Customer Support Agent', description: 'AI-powered customer support agents that handle inquiries 24/7 without human intervention.' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Lead Qualification Bot', description: 'Automated lead qualification bots that identify and prioritize high-value prospects.' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Workflow Automation', description: 'End-to-end workflow automation replacing manual repetitive tasks with intelligent systems.' } },
-          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Voice AI', description: 'Voice AI solutions for automated phone support and customer interactions.' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Customer Support Agent', description: 'AI-powered 24/7 customer support agents that handle enquiries, resolve tickets, and escalate to humans only when needed.' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Content Writing Agent', description: 'AI writing engine trained on your brand voice that produces blogs, emails, social copy, and ad creative at scale.' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Financial Ops Agent', description: 'Automates financial back-office tasks including client onboarding, document collection, invoice queries, and compliance-safe response handling.' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Operations Audit', description: 'Free operational audit that maps your business workflows and identifies exactly where AI agents will deliver measurable ROI.' } },
         ],
       },
     };
@@ -146,7 +146,7 @@ export default function Home() {
           name: 'What AI automation services does Better Call Bot offer?',
           acceptedAnswer: {
             '@type': 'Answer',
-            text: 'We offer Customer Support Agents, Lead Qualification Bots, Workflow Automation, and Voice AI — all custom-built for your business.',
+            text: 'We offer three proven agent types — Customer Support Agent, Content Writing Agent, and Financial Ops Agent — each custom-built after a free operational audit to ensure it fits your exact workflows.',
           },
         },
         {
@@ -205,28 +205,30 @@ export default function Home() {
       {/* Introduce strip between hero and products */}
       <Hero onBookAudit={openAudit} />
 
-      {/* INTRODUCE: Where Your Money Is Leaking */}
+      {/* INTRODUCE: AI Consultancy positioning */}
       <section className="bg-[#F5F4F0] px-6 md:px-12 py-16 border-b border-[#CCCCCC]">
         <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
           INTRODUCE
         </p>
         <h2 className="font-['Anton'] text-[clamp(36px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-8">
-          Customer Support:<br />WHERE YOUR MONEY IS <span className="text-[#E63329]">LEAKING</span>
+          You Know AI Is<br />Changing Everything.<br />
+          YOU JUST DON&apos;T KNOW WHERE<br />
+          IT <span className="text-[#E63329]">APPLIES TO YOU.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC] pt-8">
           <div className="md:pr-10 md:border-r border-[#CCCCCC] pb-8 md:pb-0">
             <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              Every unanswered message is a lost sale. Every repeated task is a hidden payroll cost. Every slow process is a customer quietly leaving.
+              Most businesses know AI agents are reshaping how work gets done. Almost none know which processes in their business are actually candidates for automation — or where to start without wasting money.
             </p>
           </div>
           <div className="md:px-10 md:border-r border-[#CCCCCC] py-8 md:py-0 border-t md:border-t-0 border-[#CCCCCC]">
             <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              We find the exact places where manual work is costing you, and automate them. Not with generic tools. With systems built specifically for your business.
+              We do the diagnosis first. We audit your operations, map where time and money bleeds, and identify the exact workflows where an AI agent pays for itself. Then we build it.
             </p>
           </div>
           <div className="md:pl-10 pt-8 md:pt-0 border-t md:border-t-0 border-[#CCCCCC]">
             <p className="font-['DM_Sans'] text-[14px] text-[#555555] leading-relaxed italic">
-              &ldquo;The average business wastes 19 hours per week on tasks that AI can handle in seconds. That&apos;s two and a half working days EVERY single week.&rdquo;
+              &ldquo;The question is no longer whether AI will change your business. It&apos;s whether you&apos;ll be the one who decided where — or your competitor will.&rdquo;
             </p>
           </div>
         </div>
