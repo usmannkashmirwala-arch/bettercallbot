@@ -54,8 +54,7 @@ export default function AIProducts() {
         OUR SIGNATURE AGENTS
       </p>
       <h2 className="font-['Anton'] text-[clamp(36px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-4">
-        Three Agents. Proven Across Industries.<br />
-        Built For Your <span className="text-[#E63329]">BUSINESS.</span>
+        Three Agents.<br /><span className="text-[#E63329]">Proven Across Industries.</span>
       </h2>
       <p className="font-['DM_Sans'] text-[20px] text-[#555555] max-w-xl mb-14 leading-relaxed">
         We prescribe the right agent after auditing your business — not before. These are our three most deployed solutions, each built from a real operational problem.
