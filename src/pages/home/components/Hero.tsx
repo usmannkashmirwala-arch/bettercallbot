@@ -47,7 +47,7 @@ export default function Hero({ onBookAudit }: HeroProps) {
 
         {/* Subline */}
         <p className="font-['DM_Sans'] text-base md:text-lg text-[#111111] mt-6 max-w-md leading-relaxed">
-          We find where AI applies to your business. Then we build it.
+          Never Miss Another Customer Support Message
         </p>
 
         {/* CTAs */}

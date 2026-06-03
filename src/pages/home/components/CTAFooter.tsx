@@ -23,10 +23,10 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
             YOUR COMPETITORS ARE ALREADY USING AI AGENTS
           </p>
           <h2 className="font-['Anton'] text-[clamp(48px,8vw,110px)] leading-[0.88] text-[#F5F4F0] uppercase mb-6">
-            STOP DOING IT<br />THE <span className="text-[#D4FF00]">HARD WAY.</span>
+            STOP LOSING CUSTOMERS<br />TO <span className="text-[#D4FF00]">SLOW SUPPORT.</span>
           </h2>
           <p className="font-['DM_Sans'] text-[19px] text-[#888888] max-w-xl mx-auto mb-12 leading-relaxed">
-            Every day you run a manual process is a day you&apos;re falling behind. We&apos;ll audit your operations for free, show you exactly where AI applies, and tell you what it&apos;s worth before you spend a penny.
+            Every unanswered message is a customer that won&apos;t return. Book a free audit. We&apos;ll show you exactly where your support is leaking — and how to fix it in days, not months.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -72,7 +72,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
             <div>
               <p className="font-['DM_Sans'] text-[10px] tracking-[0.2em] uppercase text-[#E63329] mb-4">SERVICES</p>
               <div className="space-y-2">
-                {['Customer Support Agent', 'Content Writing Agent', 'Financial Ops Agent', 'Book a Free Audit'].map((s) => (
+                {['Customer Support Agent'].map((s) => (
                   <p key={s} className="font-['DM_Sans'] text-[17px] text-[#555555] cursor-pointer hover:text-[#111111]">{s}</p>
                 ))}
               </div>

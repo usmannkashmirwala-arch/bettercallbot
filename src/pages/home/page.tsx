@@ -211,23 +211,22 @@ export default function Home() {
           INTRODUCE
         </p>
         <h2 className="font-['Anton'] text-[clamp(36px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-8">
-          You Know AI Is Changing Everything.<br />
-          YOU JUST DON&apos;T KNOW WHERE IT <span className="text-[#E63329]">APPLIES TO YOU.</span>
+          Customer Support:<br />THE NEXT GENERATION OF<br /><span className="text-[#E63329]">CUSTOMERS DON&apos;T WAIT.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC] pt-8">
           <div className="md:pr-10 md:border-r border-[#CCCCCC] pb-8 md:pb-0">
             <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              Most businesses know AI agents are reshaping how work gets done. Almost none know which processes in their business are actually candidates for automation — or where to start without wasting money.
+              96% of unhappy customers don&apos;t complain — they just leave. And they never come back. Every unanswered DM, every slow reply, every repeated question is costing you a customer you worked hard to get.
             </p>
           </div>
           <div className="md:px-10 md:border-r border-[#CCCCCC] py-8 md:py-0 border-t md:border-t-0 border-[#CCCCCC]">
             <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              We do the diagnosis first. We audit your operations, map where time and money bleeds, and identify the exact workflows where an AI agent pays for itself. Then we build it.
+              Customer support is not a people problem. It&apos;s a process problem. The same 20 questions get asked 200 times a day. The same order status gets checked 500 times a week. That&apos;s not a team — that&apos;s a bot waiting to be built.
             </p>
           </div>
           <div className="md:pl-10 pt-8 md:pt-0 border-t md:border-t-0 border-[#CCCCCC]">
             <p className="font-['DM_Sans'] text-[14px] text-[#555555] leading-relaxed italic">
-              &ldquo;The question is no longer whether AI will change your business. It&apos;s whether you&apos;ll be the one who decided where — or your competitor will.&rdquo;
+              &ldquo;Your next generation of customers has never waited on hold. They expect answers in seconds, 24 hours a day. The brands that automate support first will own the next decade.&rdquo;
             </p>
           </div>
         </div>

@@ -1,12 +1,12 @@
 const industries = [
-  { name: 'E-COMMERCE', desc: 'Order tracking, returns, abandoned cart recovery, product recommendation agents.' },
-  { name: 'REAL ESTATE', desc: 'Lead qualification, property inquiry bots, appointment scheduling, follow-up sequences.' },
-  { name: 'HEALTHCARE', desc: 'Patient intake, appointment reminders, FAQ resolution, post-care follow-up automation.' },
-  { name: 'LEGAL', desc: 'Intake forms, case status updates, document request handling, client communication flows.' },
-  { name: 'FINANCE', desc: 'Client onboarding, document collection, query resolution, compliance-safe response handling.' },
-  { name: 'EDUCATION', desc: 'Admissions queries, course information, student support, tuition & enrollment assistance.' },
-  { name: 'HOSPITALITY', desc: 'Booking management, guest services, check-in automation, post-stay review collection.' },
-  { name: 'SaaS', desc: 'Onboarding flows, feature support, churn prevention, upgrade prompts via AI conversations.' },
+  { name: 'STREETWEAR BRANDS', desc: 'Size availability, drop release info, shipping status, return policy — handled instantly, 24/7, without a single DM going unread.' },
+  { name: 'DENTAL CLINICS', desc: 'New patient FAQs, appointment rescheduling, insurance queries, post-procedure instructions — answered before your front desk even opens.' },
+  { name: 'SNEAKER & SHOE STORES', desc: 'Stock checks, sizing guides, order tracking, restock alerts — your customers get answers the moment they ask, not when you\'re back online.' },
+  { name: 'SUPPLEMENT BRANDS', desc: 'Ingredient questions, dosage guidance, subscription changes, shipping delays — resolved automatically so your team focuses on growth, not tickets.' },
+  { name: 'MED SPAS & CLINICS', desc: 'Treatment FAQs, booking confirmations, pre-care instructions, pricing queries — handled 24/7 so no lead ever slips through.' },
+  { name: 'ONLINE FASHION BOUTIQUES', desc: 'Returns, size exchanges, delivery updates, styling advice — automated flows that feel personal and keep customers coming back.' },
+  { name: 'CAR DEALERSHIPS', desc: 'Vehicle availability, financing FAQs, test drive booking, service reminders — every incoming query handled before your sales team even picks up.' },
+  { name: 'RESTAURANT CHAINS', desc: 'Reservation confirmations, allergy queries, menu FAQs, delivery status — support that runs through rush hour without adding headcount.' },
 ];
 
 export default function Industries() {
@@ -21,7 +21,7 @@ export default function Industries() {
           YOUR INDUSTRY.<br />OUR <span className="text-[#E63329]">SYSTEMS.</span>
         </h2>
         <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-xs leading-relaxed">
-          We&apos;ve built automation across sectors. The tech looks different, the result is always the same: more output, less manual work.
+          We&apos;ve built customer support systems across industries. The questions look different, the result is always the same: faster replies, happier customers, and a team that stops drowning in tickets.
         </p>
       </div>
 

@@ -51,7 +51,7 @@ export default function OurWork() {
               <img
                 src={cs.img}
                 alt={cs.client}
-                className="w-full h-full object-cover object-top grayscale hover:grayscale-0 transition-all duration-500"
+                className="w-full h-full object-cover object-top transition-all duration-500"
               />
             </div>
 
