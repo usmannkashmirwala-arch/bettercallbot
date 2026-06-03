@@ -211,7 +211,7 @@ export default function Home() {
           INTRODUCE
         </p>
         <h2 className="font-['Anton'] text-[clamp(36px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-8">
-          Customer Support:<br />THE NEXT GENERATION OF<br /><span className="text-[#E63329]">CUSTOMERS DON&apos;T WAIT.</span>
+          THE NEXT GENERATION OF<br /><span className="text-[#E63329]">CUSTOMERS DON&apos;T WAIT.</span>
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC] pt-8">
           <div className="md:pr-10 md:border-r border-[#CCCCCC] pb-8 md:pb-0">
