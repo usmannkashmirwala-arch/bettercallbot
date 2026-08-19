@@ -16,20 +16,16 @@ export default function OurPartners() {
         TRUSTED BY BRANDS<br />THAT <span className="text-[#E63329]">GROW.</span>
       </h2>
 
-      <div className="border-t border-b border-[#CCCCCC] py-8 overflow-hidden">
-        <div className="flex gap-10 items-center bcb-marquee-track">
+      <div className="border-t border-b border-[#CCCCCC] py-10 overflow-hidden">
+        <div className="flex gap-14 items-center bcb-marquee-track">
           {track.map((p, i) => (
-            <div key={`${p.name}-${i}`} className="flex items-center gap-4 flex-shrink-0">
-              <img
-                src={p.src}
-                alt={p.name}
-                className="w-16 h-16 rounded-full object-cover grayscale hover:grayscale-0 transition duration-300"
-              />
-              <span className="font-['Anton'] text-lg text-[#111111] uppercase whitespace-nowrap">
-                {p.name}
-              </span>
-              <span className="text-[#E63329] text-lg">·</span>
-            </div>
+            <img
+              key={`${p.name}-${i}`}
+              src={p.src}
+              alt={p.name}
+              title={p.name}
+              className="w-28 h-28 md:w-32 md:h-32 rounded-full object-cover flex-shrink-0"
+            />
           ))}
         </div>
       </div>
