@@ -10,7 +10,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
   return (
     <>
       {/* CTA Section */}
-      <section id="cta" className="bg-[#111111] px-6 md:px-12 py-24 md:py-32 relative overflow-hidden">
+      <section id="cta" className="bcb-gradient-dark px-6 md:px-12 py-24 md:py-32 relative overflow-hidden">
         {/* Background decorative text */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
           <span className="font-['Anton'] text-[20vw] text-[#1A1A1A] leading-none select-none whitespace-nowrap">
@@ -25,8 +25,8 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
           <h2 className="font-['Anton'] text-[clamp(48px,8vw,110px)] leading-[0.88] text-[#F5F4F0] uppercase mb-6">
             STOP LOSING CUSTOMERS<br />TO <span className="text-[#D4FF00]">SLOW SUPPORT.</span>
           </h2>
-          <p className="font-['DM_Sans'] text-[19px] text-[#888888] max-w-xl mx-auto mb-12 leading-relaxed">
-            Every unanswered message is a customer that won&apos;t return. Book a free audit. We&apos;ll show you exactly where your support is leaking — and how to fix it in days, not months.
+          <p className="font-['DM_Sans'] text-[16px] tracking-[0.1em] uppercase text-[#888888] max-w-xl mx-auto mb-12">
+            Live in days, not months.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
@@ -48,7 +48,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#F5F4F0] border-t border-[#CCCCCC] px-6 md:px-12 py-12">
+      <footer className="bcb-gradient-light-subtle border-t border-[#CCCCCC] px-6 md:px-12 py-12">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
           {/* Left: brand */}
           <div className="max-w-xs">
@@ -62,8 +62,8 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
                 BETTER CALL <span className="text-[#E63329]">BOT</span>
               </span>
             </div>
-            <p className="font-['DM_Sans'] text-[16px] text-[#888888] leading-relaxed">
-              AI consultancy for businesses that know AI is changing the game but don&apos;t know where it applies to them. We find it. We build it.
+            <p className="font-['DM_Sans'] text-[13px] tracking-[0.1em] uppercase text-[#888888]">
+              Customer support, automated.
             </p>
           </div>
 
@@ -72,7 +72,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
             <div>
               <p className="font-['DM_Sans'] text-[10px] tracking-[0.2em] uppercase text-[#E63329] mb-4">SERVICES</p>
               <div className="space-y-2">
-                {['Customer Support Agent'].map((s) => (
+                {['Omni-Channel AI Support', 'AI Shopping Assistant'].map((s) => (
                   <p key={s} className="font-['DM_Sans'] text-[17px] text-[#555555] cursor-pointer hover:text-[#111111]">{s}</p>
                 ))}
               </div>

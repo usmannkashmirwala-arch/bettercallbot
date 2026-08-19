@@ -1,13 +1,13 @@
 const stats = [
   { value: '4×', label: 'more leads converted', sub: 'With the same amount of Ad budget spent' },
-  { value: '$3.70', label: 'in value delivered', sub: 'For each dollar invested&nbsp;' },
+  { value: '$3.70', label: 'in value delivered', sub: 'Per dollar invested' },
   { value: '90%', label: 'queries handled', sub: 'Without human intervention' },
   { value: '71%', label: 'Increase', sub: 'In customer satisfaction' },
 ];
 
 export default function InstantROI() {
   return (
-    <section id="roi" className="bg-[#F5F4F0] px-6 md:px-12 py-20">
+    <section id="roi" className="bcb-gradient-light px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         THE RESULTS
@@ -17,8 +17,8 @@ export default function InstantROI() {
         <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#111111] uppercase">
           THE NUMBERS<br />TELL THE <span className="text-[#E63329]">TRUTH</span>
         </h2>
-        <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-sm leading-relaxed">
-          These are real numbers from real clients. We track ROI from day one because automation that doesn&apos;t pay isn&apos;t automation — it&apos;s overhead.
+        <p className="font-['DM_Sans'] text-[14px] tracking-[0.1em] uppercase text-[#555555] max-w-sm">
+          Real clients. Real numbers.
         </p>
       </div>
 
@@ -44,12 +44,12 @@ export default function InstantROI() {
 
       {/* How it works */}
       <div className="mt-20">
-        <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#ff0000] mb-10">HOW IT WORKS</p>
+        <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-10">HOW IT WORKS</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC]">
           {[
-            { step: '01', title: 'AUDIT YOUR OPERATIONS', desc: 'We map your full operations — every manual task, bottleneck, and slow process. We find where AI pays, and where it doesn\'t. No commitment required.' },
-            { step: '02', title: 'PRESCRIBE THE RIGHT AGENT', desc: 'Based on the audit, we tell you exactly which agent to build and what ROI to expect — before a single line of code is written.' },
-            { step: '03', title: 'BUILD, DEPLOY & SCALE', desc: 'We engineer the agent around your exact workflow. No templates. We go live, monitor, and tune until the numbers move.' },
+            { step: '01', title: 'AUDIT', desc: 'Map every bottleneck.' },
+            { step: '02', title: 'PRESCRIBE', desc: 'Right agent, right ROI.' },
+            { step: '03', title: 'BUILD & SCALE', desc: 'Live in days, not months.' },
           ].map((item, i) => (
             <div
               key={item.step}
@@ -57,10 +57,9 @@ export default function InstantROI() {
             >
               <p className="font-['Anton'] text-7xl text-[#E5E3DF] leading-none mb-6">{item.step}</p>
               <h3 className="font-['Anton'] text-2xl text-[#111111] uppercase mb-3">{item.title}</h3>
-              <p
-                className="font-['DM_Sans'] text-[17px] text-[#555555] leading-relaxed"
-                dangerouslySetInnerHTML={{ __html: item.desc }}
-              />
+              <p className="font-['DM_Sans'] text-[15px] tracking-[0.05em] uppercase text-[#888888]">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>

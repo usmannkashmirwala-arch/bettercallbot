@@ -14,7 +14,7 @@ const features = [
 
 export default function Pricing({ onBookAudit }: PricingProps) {
   return (
-    <section id="pricing" className="bg-[#F5F4F0] px-6 md:px-12 py-20">
+    <section id="pricing" className="bcb-gradient-light px-6 md:px-12 py-20">
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         TRANSPARENT PRICING PLANS
       </p>
@@ -23,8 +23,8 @@ export default function Pricing({ onBookAudit }: PricingProps) {
         <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#111111] uppercase">
           NO SURPRISES.<br />NO <span className="text-[#E63329]">FLUFF.</span>
         </h2>
-        <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-xs leading-relaxed">
-          We quote after the audit — not before. That way you only pay for what your business actually needs.
+        <p className="font-['DM_Sans'] text-[14px] tracking-[0.1em] uppercase text-[#555555] max-w-xs">
+          Priced after the audit.
         </p>
       </div>
 
@@ -32,7 +32,7 @@ export default function Pricing({ onBookAudit }: PricingProps) {
       <div className="border border-[#CCCCCC]">
         <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Left: Plan info */}
-          <div className="bg-[#111111] p-10 md:p-14 flex flex-col justify-between">
+          <div className="bg-[var(--bcb-maroon-950)] p-10 md:p-14 flex flex-col justify-between">
             <div>
               <span className="font-['DM_Sans'] text-[10px] tracking-[0.2em] uppercase px-2 py-1 bg-[#D4FF00] text-[#111111]">
                 for all kind of businesses and teams
@@ -48,8 +48,8 @@ export default function Pricing({ onBookAudit }: PricingProps) {
                 </span>
               </div>
 
-              <p className="font-['DM_Sans'] text-[18px] leading-relaxed text-[#AAAAAA] max-w-sm">
-                Every business is different. After your free audit, we scope and price an engagement built around your exact workflows and goals — no guesswork, no generic packages.
+              <p className="font-['DM_Sans'] text-[16px] tracking-[0.05em] uppercase text-[#AAAAAA] max-w-sm">
+                Priced around your business. Not a package.
               </p>
             </div>
 

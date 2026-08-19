@@ -1,3 +1,64 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --bcb-red-900: #5C0E09;
+    --bcb-red-700: #8C160F;
+    --bcb-red-accent: #E63329;
+    --bcb-cream: #F5F4F0;
+    --bcb-maroon-950: #1C0705;
+    --bcb-maroon-900: #2B0B08;
+  }
+}
+
+@layer utilities {
+  .bcb-gradient-hero {
+    background-image: linear-gradient(180deg,
+      var(--bcb-red-900) 0px,
+      var(--bcb-red-accent) 10vh,
+      var(--bcb-cream) 24vh,
+      var(--bcb-cream) 100%);
+  }
+  .bcb-gradient-light {
+    background-image: linear-gradient(180deg,
+      var(--bcb-red-900) 0px,
+      var(--bcb-red-accent) 140px,
+      var(--bcb-cream) 380px,
+      var(--bcb-cream) 100%);
+  }
+  .bcb-gradient-light-subtle {
+    background-image: linear-gradient(180deg,
+      var(--bcb-red-700) 0px,
+      var(--bcb-cream) 160px,
+      var(--bcb-cream) 100%);
+  }
+  .bcb-gradient-dark {
+    background-image: linear-gradient(180deg,
+      var(--bcb-red-900) 0px,
+      var(--bcb-red-700) 120px,
+      var(--bcb-maroon-950) 340px,
+      var(--bcb-maroon-950) 100%);
+  }
+}
+
+@keyframes bcb-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.bcb-marquee-track {
+  animation: bcb-marquee 30s linear infinite;
+  width: max-content;
+}
+
+.bcb-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bcb-marquee-track {
+    animation: none;
+  }
+}

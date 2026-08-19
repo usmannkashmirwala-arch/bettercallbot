@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   onBookAudit: () => void;
@@ -22,7 +23,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#F5F4F0] border-b border-[#CCCCCC]' : 'bg-transparent'
+        scrolled ? 'bg-[#F5F4F0]/90 backdrop-blur-sm border-b border-[#CCCCCC]' : 'bg-transparent'
       }`}
     >
       <div className="px-6 md:px-12 py-4 flex items-center justify-between">
@@ -34,7 +35,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
             className="w-8 h-8 object-cover"
           />
           <span
-            className="font-['Anton'] text-lg tracking-wider text-[#111111]"
+            className={`font-['Anton'] text-lg tracking-wider transition-colors duration-300 ${scrolled ? 'text-[#111111]' : 'text-[#F5F4F0]'}`}
           >
             BETTER CALL <span className="text-[#E63329]">BOT</span>
           </span>
@@ -51,7 +52,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className="font-['DM_Sans'] text-[11px] tracking-[0.2em] uppercase text-[#111111] hover:text-[#E63329] transition-colors cursor-pointer whitespace-nowrap"
+              className={`font-['DM_Sans'] text-[11px] tracking-[0.2em] uppercase hover:text-[#E63329] transition-colors cursor-pointer whitespace-nowrap ${scrolled ? 'text-[#111111]' : 'text-[#F5F4F0]'}`}
             >
               {item.label}
             </button>
@@ -61,7 +62,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
-            className="w-8 h-8 flex items-center justify-center text-[#111111] hover:text-[#E63329] transition-colors cursor-pointer"
+            className={`w-8 h-8 flex items-center justify-center hover:text-[#E63329] transition-colors cursor-pointer ${scrolled ? 'text-[#111111]' : 'text-[#F5F4F0]'}`}
           >
             <i className="ri-instagram-line text-[18px]"></i>
           </a>
@@ -75,7 +76,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-[#111111] cursor-pointer"
+          className={`md:hidden cursor-pointer transition-colors duration-300 ${scrolled || menuOpen ? 'text-[#111111]' : 'text-[#F5F4F0]'}`}
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >

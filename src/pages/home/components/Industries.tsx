@@ -1,17 +1,17 @@
 const industries = [
-  { name: 'STREETWEAR BRANDS', desc: 'Size availability, drop release info, shipping status, return policy — handled instantly, 24/7, without a single DM going unread.' },
-  { name: 'DENTAL CLINICS', desc: 'New patient FAQs, appointment rescheduling, insurance queries, post-procedure instructions — answered before your front desk even opens.' },
-  { name: 'SNEAKER & SHOE STORES', desc: 'Stock checks, sizing guides, order tracking, restock alerts — your customers get answers the moment they ask, not when you\'re back online.' },
-  { name: 'SUPPLEMENT BRANDS', desc: 'Ingredient questions, dosage guidance, subscription changes, shipping delays — resolved automatically so your team focuses on growth, not tickets.' },
-  { name: 'MED SPAS & CLINICS', desc: 'Treatment FAQs, booking confirmations, pre-care instructions, pricing queries — handled 24/7 so no lead ever slips through.' },
-  { name: 'ONLINE FASHION BOUTIQUES', desc: 'Returns, size exchanges, delivery updates, styling advice — automated flows that feel personal and keep customers coming back.' },
-  { name: 'CAR DEALERSHIPS', desc: 'Vehicle availability, financing FAQs, test drive booking, service reminders — every incoming query handled before your sales team even picks up.' },
-  { name: 'RESTAURANT CHAINS', desc: 'Reservation confirmations, allergy queries, menu FAQs, delivery status — support that runs through rush hour without adding headcount.' },
+  { name: 'STREETWEAR BRANDS', desc: 'Drops, sizing, restocks.' },
+  { name: 'DENTAL CLINICS', desc: 'Bookings, insurance, aftercare.' },
+  { name: 'SNEAKER & SHOE STORES', desc: 'Stock checks, instantly.' },
+  { name: 'SUPPLEMENT BRANDS', desc: 'Dosage, subscriptions, shipping.' },
+  { name: 'MED SPAS & CLINICS', desc: 'Booking, no lead lost.' },
+  { name: 'ONLINE FASHION BOUTIQUES', desc: 'Returns, sizing, styling.' },
+  { name: 'CAR DEALERSHIPS', desc: 'Financing, test drives, service.' },
+  { name: 'RESTAURANT CHAINS', desc: 'Reservations, menus, delivery.' },
 ];
 
 export default function Industries() {
   return (
-    <section id="industries" className="bg-[#F5F4F0] px-6 md:px-12 py-20">
+    <section id="industries" className="bcb-gradient-light px-6 md:px-12 py-20">
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         INDUSTRIES WE SERVE
       </p>
@@ -20,8 +20,8 @@ export default function Industries() {
         <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#111111] uppercase">
           YOUR INDUSTRY.<br />OUR <span className="text-[#E63329]">SYSTEMS.</span>
         </h2>
-        <p className="font-['DM_Sans'] text-[18px] text-[#555555] max-w-xs leading-relaxed">
-          We&apos;ve built customer support systems across industries. The questions look different, the result is always the same: faster replies, happier customers, and a team that stops drowning in tickets.
+        <p className="font-['DM_Sans'] text-[14px] tracking-[0.1em] uppercase text-[#555555] max-w-xs">
+          8 industries. One system.
         </p>
       </div>
 

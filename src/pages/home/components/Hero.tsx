@@ -8,7 +8,7 @@ export default function Hero({ onBookAudit }: HeroProps) {
   };
 
   return (
-    <section className="relative bg-[#F5F4F0] min-h-screen flex flex-col overflow-hidden" id="hero">
+    <section className="relative bcb-gradient-hero min-h-screen flex flex-col overflow-hidden" id="hero">
 
       {/* Phone sticker — cord exits through the very top of the page */}
       <div
@@ -25,10 +25,10 @@ export default function Hero({ onBookAudit }: HeroProps) {
 
       {/* Top utility bar */}
       <div className="relative z-10 flex items-center justify-between px-6 md:px-12 pt-6 pb-2 mt-16">
-        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
-          AI CONSULTANCY
+        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#F5F4F0]">
+          CUSTOMER SUPPORT AI
         </span>
-        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
+        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#F5F4F0]">
           INNOVATE | AUTOMATE
         </span>
       </div>
@@ -47,8 +47,18 @@ export default function Hero({ onBookAudit }: HeroProps) {
 
         {/* Subline */}
         <p className="font-['DM_Sans'] text-base md:text-lg text-[#111111] mt-6 max-w-md leading-relaxed">
-          Never Miss Another Customer Support Message
+          Answers in 4 seconds. Sells while you sleep.
         </p>
+
+        {/* Product tags */}
+        <div className="flex flex-wrap gap-3 mt-5">
+          <span className="font-['DM_Sans'] text-[9px] tracking-[0.2em] uppercase text-[#111111] border border-[#111111]/30 px-3 py-1.5">
+            Omni-Channel AI Support
+          </span>
+          <span className="font-['DM_Sans'] text-[9px] tracking-[0.2em] uppercase text-[#111111] border border-[#111111]/30 px-3 py-1.5">
+            AI Shopping Assistant
+          </span>
+        </div>
 
         {/* CTAs */}
         <div className="flex flex-col sm:flex-row gap-4 mt-8">

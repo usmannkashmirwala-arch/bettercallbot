@@ -1,6 +1,6 @@
 export default function CustomerSupport() {
   return (
-    <section id="customer-support" className="bg-[#111111] px-6 md:px-12 py-20">
+    <section id="customer-support" className="bcb-gradient-dark px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         THE CONSULTANCY DIFFERENCE
@@ -12,11 +12,8 @@ export default function CustomerSupport() {
           <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#F5F4F0] uppercase mb-6">
             WE DIAGNOSE<br />FIRST. <span className="text-[#E63329]">BUILD</span><br />SECOND.
           </h2>
-          <p className="font-['DM_Sans'] text-[18px] text-[#AAAAAA] leading-relaxed mb-5">
-            Most businesses get sold AI tools before anyone asks what problem they&apos;re actually solving. A vendor demos a chatbot, it looks impressive, and six months later it&apos;s unused because it didn&apos;t fit the workflow.
-          </p>
           <p className="font-['DM_Sans'] text-[18px] text-[#AAAAAA] leading-relaxed mb-8">
-            We start differently. Every engagement begins with a free audit of your operations — where time bleeds, where revenue leaks, where humans are doing machine work. Only then do we prescribe the right agent and build it around your exact process.
+            Free audit first. Built around your process second.
           </p>
 
           {/* Feature list */}

@@ -205,8 +205,8 @@ export default function Home() {
       {/* Introduce strip between hero and products */}
       <Hero onBookAudit={openAudit} />
 
-      {/* INTRODUCE: AI Consultancy positioning */}
-      <section className="bg-[#F5F4F0] px-6 md:px-12 py-16 border-b border-[#CCCCCC]">
+      {/* INTRODUCE: positioning */}
+      <section className="bcb-gradient-light px-6 md:px-12 py-16 border-b border-[#CCCCCC]">
         <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
           INTRODUCE
         </p>
@@ -215,24 +215,22 @@ export default function Home() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-[#CCCCCC] pt-8">
           <div className="md:pr-10 md:border-r border-[#CCCCCC] pb-8 md:pb-0">
-            <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              96% of unhappy customers don&apos;t complain — they just leave. And they never come back. Every unanswered DM, every slow reply, every repeated question is costing you a customer you worked hard to get.
-            </p>
+            <p className="font-['Anton'] text-5xl text-[#111111] leading-none mb-2">96%</p>
+            <p className="font-['DM_Sans'] text-[12px] tracking-[0.1em] uppercase text-[#555555]">Leave without complaining.</p>
           </div>
           <div className="md:px-10 md:border-r border-[#CCCCCC] py-8 md:py-0 border-t md:border-t-0 border-[#CCCCCC]">
-            <p className="font-['DM_Sans'] text-[14px] text-[#333333] leading-relaxed">
-              Customer support is not a people problem. It&apos;s a process problem. The same 20 questions get asked 200 times a day. The same order status gets checked 500 times a week. That&apos;s not a team — that&apos;s a bot waiting to be built.
-            </p>
+            <p className="font-['Anton'] text-5xl text-[#111111] leading-none mb-2">200x</p>
+            <p className="font-['DM_Sans'] text-[12px] tracking-[0.1em] uppercase text-[#555555]">Same question, asked daily.</p>
           </div>
-          <div className="md:pl-10 pt-8 md:pt-0 border-t md:border-t-0 border-[#CCCCCC]">
-            <p className="font-['DM_Sans'] text-[14px] text-[#555555] leading-relaxed italic">
-              &ldquo;Your next generation of customers has never waited on hold. They expect answers in seconds, 24 hours a day. The brands that automate support first will own the next decade.&rdquo;
+          <div className="md:pl-10 pt-8 md:pt-0 border-t md:border-t-0 border-[#CCCCCC] flex items-center">
+            <p className="font-['DM_Sans'] text-[16px] text-[#333333] leading-snug italic">
+              &ldquo;They stopped waiting on hold.&rdquo;
             </p>
           </div>
         </div>
       </section>
 
-      <AIProducts />
+      <AIProducts onBookAudit={openAudit} />
       <CustomerSupport />
       <InstantROI />
       <Industries />

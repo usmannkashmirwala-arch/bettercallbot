@@ -1,6 +1,6 @@
 export default function Founder() {
   return (
-    <section id="founder" className="bg-[#F5F4F0] px-6 md:px-12 py-20">
+    <section id="founder" className="bcb-gradient-light px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         FOUNDER / WHO WE ARE
@@ -17,7 +17,7 @@ export default function Founder() {
             />
           </div>
           {/* Name overlay at bottom */}
-          <div className="absolute bottom-0 left-0 right-0 bg-[#111111] px-6 py-5">
+          <div className="absolute bottom-0 left-0 right-0 bg-[var(--bcb-maroon-950)] px-6 py-5">
             <p className="font-['DM_Sans'] text-[10px] tracking-[0.2em] uppercase text-[#888888] mb-1">FOUNDER &amp; DIRECTOR</p>
             <p className="font-['Anton'] text-xl text-[#F5F4F0]">USMAN KASHMIRWALA</p>
           </div>
@@ -32,15 +32,9 @@ export default function Founder() {
             BSc Economics | LUMS &apos;25
           </p>
 
-          <div className="space-y-5 mb-10">
+          <div className="mb-10">
             <p className="font-['DM_Sans'] text-[18px] text-[#333333] leading-relaxed">
-              I built BCB on a simple idea: most businesses don&apos;t need more AI tools — they need someone to tell them which one actually applies to them. I start with the diagnosis. The build comes after.
-            </p>
-            <p className="font-['DM_Sans'] text-[18px] text-[#555555] leading-relaxed">
-              Built BCB after watching founders burn hours on work that should never touch a human. There&apos;s a smarter way to run a business. I&apos;ll show you exactly where to start.
-            </p>
-            <p className="font-['DM_Sans'] text-[18px] text-[#555555] leading-relaxed">
-              Economics background means I think in systems, incentives, and returns. Not just tech for tech&apos;s sake, automation that pays.
+              Diagnose first. Build second. Always.
             </p>
           </div>
 
