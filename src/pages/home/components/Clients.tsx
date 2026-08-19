@@ -1,5 +1,3 @@
-import BrandMarquee from './BrandMarquee';
-
 const testimonials = [
   {
     quote: '48-hour response times to 4 minutes. That\'s not a tool, that\'s a diagnosis.',
@@ -29,7 +27,7 @@ const testimonials = [
 
 export default function Clients() {
   return (
-    <section id="clients" className="bcb-gradient-light px-6 md:px-12 py-20">
+    <section id="clients" className="px-6 md:px-12 py-20">
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         SOME OF OUR CLIENTS
       </p>
@@ -37,8 +35,6 @@ export default function Clients() {
       <h2 className="font-['Anton'] text-[clamp(40px,6vw,80px)] leading-[0.92] text-[#111111] uppercase mb-14">
         THEY <span className="text-[#E63329]">TRUSTED</span> US.<br />THEN THEY GREW.
       </h2>
-
-      <BrandMarquee />
 
       {/* Testimonials */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">

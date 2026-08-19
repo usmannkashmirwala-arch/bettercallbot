@@ -7,7 +7,7 @@ const stats = [
 
 export default function InstantROI() {
   return (
-    <section id="roi" className="bcb-gradient-light px-6 md:px-12 py-20">
+    <section id="roi" className="px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         THE RESULTS

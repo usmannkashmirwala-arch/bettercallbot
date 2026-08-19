@@ -8,7 +8,7 @@ export default function Hero({ onBookAudit }: HeroProps) {
   };
 
   return (
-    <section className="relative bcb-gradient-hero min-h-screen flex flex-col overflow-hidden" id="hero">
+    <section className="relative min-h-screen flex flex-col overflow-hidden" id="hero">
 
       {/* Phone sticker — cord exits through the very top of the page */}
       <div

@@ -14,7 +14,7 @@ const features = [
 
 export default function Pricing({ onBookAudit }: PricingProps) {
   return (
-    <section id="pricing" className="bcb-gradient-light px-6 md:px-12 py-20">
+    <section id="pricing" className="px-6 md:px-12 py-20">
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         TRANSPARENT PRICING PLANS
       </p>

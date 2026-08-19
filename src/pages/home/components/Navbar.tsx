@@ -45,7 +45,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
         <div className="hidden md:flex items-center gap-8">
           {[
             { label: 'SERVICES', id: 'services' },
-            { label: 'WORK', id: 'work' },
+            { label: 'PARTNERS', id: 'partners' },
             { label: 'PRICING', id: 'pricing' },
             { label: 'ABOUT', id: 'founder' },
           ].map((item) => (
@@ -89,7 +89,7 @@ export default function Navbar({ onBookAudit }: NavbarProps) {
         <div className="md:hidden bg-[#F5F4F0] border-t border-[#CCCCCC] px-6 py-6 flex flex-col gap-5">
           {[
             { label: 'SERVICES', id: 'services' },
-            { label: 'WORK', id: 'work' },
+            { label: 'PARTNERS', id: 'partners' },
             { label: 'PRICING', id: 'pricing' },
             { label: 'ABOUT', id: 'founder' },
           ].map((item) => (

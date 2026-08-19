@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import AIProducts from './components/AIProducts';
-import CustomerSupport from './components/CustomerSupport';
 import InstantROI from './components/InstantROI';
 import Industries from './components/Industries';
 import Pricing from './components/Pricing';
-import OurWork from './components/OurWork';
+import OurPartners from './components/OurPartners';
 import Clients from './components/Clients';
 import Founder from './components/Founder';
 import CTAFooter from './components/CTAFooter';
@@ -199,14 +198,14 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-[#F5F4F0] min-h-screen">
+    <div className="bcb-page-gradient min-h-screen">
       <Navbar onBookAudit={openAudit} />
 
       {/* Introduce strip between hero and products */}
       <Hero onBookAudit={openAudit} />
 
       {/* INTRODUCE: positioning */}
-      <section className="bcb-gradient-light px-6 md:px-12 py-16 border-b border-[#CCCCCC]">
+      <section className="px-6 md:px-12 py-16 border-b border-[#CCCCCC]">
         <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
           INTRODUCE
         </p>
@@ -231,11 +230,10 @@ export default function Home() {
       </section>
 
       <AIProducts onBookAudit={openAudit} />
-      <CustomerSupport />
       <InstantROI />
       <Industries />
       <Pricing onBookAudit={openAudit} />
-      <OurWork />
+      <OurPartners />
       <Clients />
       <Founder />
       <CTAFooter onBookAudit={openAudit} />

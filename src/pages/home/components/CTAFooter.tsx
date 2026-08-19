@@ -10,7 +10,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
   return (
     <>
       {/* CTA Section */}
-      <section id="cta" className="bcb-gradient-dark px-6 md:px-12 py-24 md:py-32 relative overflow-hidden">
+      <section id="cta" className="bg-[var(--bcb-maroon-950)] px-6 md:px-12 py-24 md:py-32 relative overflow-hidden">
         {/* Background decorative text */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
           <span className="font-['Anton'] text-[20vw] text-[#1A1A1A] leading-none select-none whitespace-nowrap">
@@ -48,7 +48,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
       </section>
 
       {/* Footer */}
-      <footer className="bcb-gradient-light-subtle border-t border-[#CCCCCC] px-6 md:px-12 py-12">
+      <footer className="bg-[#F5F4F0] border-t border-[#CCCCCC] px-6 md:px-12 py-12">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
           {/* Left: brand */}
           <div className="max-w-xs">
@@ -82,7 +82,7 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
               <div className="space-y-2">
                 {[
                   { label: 'About', id: 'founder' },
-                  { label: 'Our Work', id: 'work' },
+                  { label: 'Our Partners', id: 'partners' },
                   { label: 'Pricing', id: 'pricing' },
                   { label: 'Contact', id: 'cta' },
                 ].map((item) => (

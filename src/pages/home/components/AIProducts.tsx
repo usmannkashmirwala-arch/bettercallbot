@@ -29,7 +29,7 @@ const products = [
 
 export default function AIProducts({ onBookAudit }: AIProductsProps) {
   return (
-    <section id="services" className="bcb-gradient-light px-6 md:px-12 py-20">
+    <section id="services" className="px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         OUR PRODUCTS

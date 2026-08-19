@@ -1,6 +1,6 @@
 export default function Founder() {
   return (
-    <section id="founder" className="bcb-gradient-light px-6 md:px-12 py-20">
+    <section id="founder" className="px-6 md:px-12 py-20">
       {/* Section label */}
       <p className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#E63329] mb-4">
         FOUNDER / WHO WE ARE
