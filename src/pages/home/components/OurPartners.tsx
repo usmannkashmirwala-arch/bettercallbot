@@ -1,7 +1,8 @@
 const partners = [
-  { name: 'UA Travels and Tours', src: '/partners/ua-travels.jpg' },
-  { name: 'Resin Marvels', src: '/partners/resin-marvels.jpg' },
-  { name: 'The Revival Movement', src: '/partners/revival-movement.jpg' },
+  { name: 'UA Travels and Tours', src: '/partners/ua-travels-logo.jpeg' },
+  { name: 'Resin Marvels', src: '/partners/resin-marvels-logo.jpg' },
+  { name: 'Gumi Plus', src: '/partners/gumi-plus-logo.jpeg' },
+  { name: 'Cloud 9 Naturals', src: '/partners/cloud9-logo.png' },
 ];
 
 export default function OurPartners() {
