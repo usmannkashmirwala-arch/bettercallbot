@@ -4,25 +4,10 @@
 
 @layer base {
   :root {
-    --bcb-red-900: #B8493F;
-    --bcb-red-700: #D97C6E;
     --bcb-red-accent: #E63329;
     --bcb-cream: #F5F4F0;
     --bcb-maroon-950: #1C0705;
     --bcb-maroon-900: #2B0B08;
-  }
-}
-
-@layer utilities {
-  /* One continuous fade for the whole page — applied once, to the page
-     wrapper only. Sections below it stay transparent so this single
-     gradient shows through; it never restarts partway down the page. */
-  .bcb-page-gradient {
-    background-image: linear-gradient(180deg,
-      var(--bcb-red-900) 0px,
-      var(--bcb-red-700) 220px,
-      var(--bcb-cream) 680px,
-      var(--bcb-cream) 100%);
   }
 }
 

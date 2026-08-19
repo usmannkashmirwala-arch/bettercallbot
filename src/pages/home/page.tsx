@@ -198,7 +198,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bcb-page-gradient min-h-screen">
+    <div className="bg-[var(--bcb-cream)] min-h-screen">
       <Navbar onBookAudit={openAudit} />
 
       {/* Introduce strip between hero and products */}
@@ -229,11 +229,11 @@ export default function Home() {
         </div>
       </section>
 
+      <OurPartners />
       <AIProducts onBookAudit={openAudit} />
       <InstantROI />
       <Industries />
       <Pricing onBookAudit={openAudit} />
-      <OurPartners />
       <Clients />
       <Founder />
       <CTAFooter onBookAudit={openAudit} />

@@ -25,10 +25,10 @@ export default function Hero({ onBookAudit }: HeroProps) {
 
       {/* Top utility bar */}
       <div className="relative z-10 flex items-center justify-between px-6 md:px-12 pt-6 pb-2 mt-16">
-        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#F5F4F0]">
+        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
           CUSTOMER SUPPORT AI
         </span>
-        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#F5F4F0]">
+        <span className="font-['DM_Sans'] text-[10px] tracking-[0.25em] uppercase text-[#111111]">
           INNOVATE | AUTOMATE
         </span>
       </div>
