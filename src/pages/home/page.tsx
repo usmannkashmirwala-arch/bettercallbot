@@ -69,9 +69,9 @@ export default function Home() {
     const webPageSchema = {
       '@context': 'https://schema.org',
       '@type': 'WebPage',
-      name: 'Better Call Bot — AI Automation Consultancy',
+      name: 'AI Customer Support & Shopping Assistants | Better Call Bot',
       url: siteUrl,
-      description: 'Better Call Bot (BCB) is an AI automation consultancy replacing repetitive tasks, slow responses, and manual processes with intelligent systems. Save 400+ hours with AI automation. Book a free audit today.',
+      description: 'Better Call Bot builds AI customer support systems and AI shopping assistants that reduce bounce rates, increase conversions and improve customer satisfaction.',
       inLanguage: 'en-US',
       isPartOf: { '@type': 'WebSite', url: siteUrl },
       about: { '@type': 'Organization', name: 'Better Call Bot' },
