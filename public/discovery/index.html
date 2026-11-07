@@ -185,7 +185,7 @@ input:focus,textarea:focus,select:focus{outline:3px solid var(--accent);outline-
 const KEY="bcb-discovery-draft-v1";
 // Google Apps Script web app that appends each submission to the "BCB Discovery Submissions" sheet.
 // See integrations/discovery-form-apps-script.gs for the script and setup steps.
-const SUBMIT_URL="";
+const SUBMIT_URL="https://script.google.com/macros/s/AKfycbw5rJcwWgtMoPZU_TzUPZbKql8i82mN0gWYgapGVZ5SPPETFzMk8cSiw4fNx2ODKZbxLQ/exec";
 let A={}; let step=0; let maxReached=0; let view="form";
 try{const s=JSON.parse(localStorage.getItem(KEY)||"null"); if(s){A=s.A||{};step=s.step||0;maxReached=s.max||0;}}catch(e){}
 
