@@ -36,12 +36,10 @@ export default function CTAFooter({ onBookAudit }: CTAFooterProps) {
               BOOK A FREE AUDIT →
             </button>
             <a
-              href="https://wa.me/18317776194"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-['DM_Sans'] text-sm tracking-[0.12em] uppercase font-semibold border border-[#3A3A3A] bg-transparent text-[#888888] px-10 py-5 cursor-pointer whitespace-nowrap hover:border-[#F5F4F0] hover:text-[#F5F4F0] transition-colors inline-block"
+              href="/discovery/"
+              className="font-['DM_Sans'] text-sm tracking-[0.12em] uppercase font-semibold border border-[#3A3A3A] bg-transparent text-[#888888] px-10 py-5 cursor-pointer text-center sm:whitespace-nowrap hover:border-[#F5F4F0] hover:text-[#F5F4F0] transition-colors inline-block"
             >
-              Test Our Agent →
+              Fill in a discovery form for a free trial →
             </a>
           </div>
         </div>

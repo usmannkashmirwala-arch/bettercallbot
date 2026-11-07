@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Free Trial Discovery Form | Better Call Bot</title>
+<meta name="description" content="Brief your AI support agent in about 10 minutes. Your answers become the playbook for your Better Call Bot free trial.">
+<link rel="canonical" href="https://www.bettercallbot.com/discovery/">
+<meta property="og:title" content="Free Trial Discovery Form | Better Call Bot">
+<meta property="og:description" content="Brief your AI support agent in about 10 minutes and start your free trial.">
+<meta property="og:image" content="https://www.bettercallbot.com/og-image.png">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: brutalist editorial — black header band, sticky step rail left, one framed form panel right; stacks on phones */
+:root{
+  --paper:#F3EEDF; --panel:#FBF8EF; --ink:#141311; --muted:#6B6555; --rule:#141311;
+  --red:#D92E17; --lime:#C6F432; --on-lime:#141311; --on-red:#FBF8EF; --soft:#E7E0CC;
+  --band:#141311; --on-band:#F3EEDF;
+  --display:"Anton","Impact","Arial Narrow",sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"DM Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --paper:#12110F; --panel:#1B1A17; --ink:#F1ECDD; --muted:#A69F8C; --rule:#F1ECDD;
+  --red:#FF5639; --lime:#C6F432; --on-lime:#141311; --on-red:#141311; --soft:#2A2824;
+  --band:#000000; --on-band:#F1ECDD; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#12110F; --panel:#1B1A17; --ink:#F1ECDD; --muted:#A69F8C; --rule:#F1ECDD;
+  --red:#FF5639; --lime:#C6F432; --on-lime:#141311; --on-red:#141311; --soft:#2A2824;
+  --band:#000000; --on-band:#F1ECDD; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* Header band */
+.band{background:var(--band);color:var(--on-band)}
+.band .wrap{padding-block:22px 26px;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:flex-end;justify-content:space-between}
+.brand{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
+.brand b{background:var(--red);color:var(--on-red);padding:2px 7px;font-weight:500}
+.band h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,6vw,64px);line-height:.95;margin:10px 0 0;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance}
+.band h1 span{color:var(--lime)}
+.band p{margin:10px 0 0;max-width:52ch;opacity:.82}
+.meta{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pill{font-family:var(--mono);font-size:12px;border:1.5px solid var(--on-band);padding:5px 10px;text-transform:uppercase;letter-spacing:.08em}
+.pill.btn{background:transparent;color:var(--on-band);cursor:pointer}
+.pill.btn:hover{background:var(--lime);color:var(--on-lime);border-color:var(--lime)}
+
+/* Grid */
+.grid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;padding-block:32px 64px}
+@media (max-width:820px){.grid{grid-template-columns:minmax(0,1fr);gap:18px;padding-block:18px 48px}}
+
+/* Rail */
+.rail{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px);align-self:start}
+.rail ol{list-style:none;margin:0;padding:0;border-top:2px solid var(--rule)}
+.rail li button{all:unset;box-sizing:border-box;width:100%;display:grid;grid-template-columns:32px 1fr;gap:6px;padding:11px 4px;border-bottom:1px solid var(--rule);cursor:pointer;font-size:14px}
+.rail li button:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.rail .n{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:2px}
+.rail li.on button{background:var(--ink);color:var(--paper)}
+.rail li.on .n{color:var(--lime)}
+.rail li.done .n::after{content:" ✓";color:var(--red)}
+.rail li.locked button{opacity:.4;cursor:not-allowed}
+.railnote{font-size:12.5px;color:var(--muted);margin-top:14px}
+.mbar{display:none}
+@media (max-width:820px){
+  .rail{display:none}
+  .mbar{display:block;position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);padding-block:10px;border-bottom:2px solid var(--rule)}
+  body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+  .mbar .row{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.08em}
+  .track{height:8px;border:1.5px solid var(--rule);margin-top:8px}
+  .track i{display:block;height:100%;background:var(--red);transition:width .25s}
+}
+
+/* Panel */
+.panel{background:var(--panel);border:2px solid var(--rule);box-shadow:8px 8px 0 var(--ink);min-width:0}
+@media (max-width:820px){.panel{box-shadow:5px 5px 0 var(--ink)}}
+.phead{padding:22px 26px 18px;border-bottom:2px solid var(--rule)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.phead h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,4vw,40px);line-height:1;margin:6px 0 0;text-transform:uppercase;text-wrap:balance}
+.phead p{margin:8px 0 0;color:var(--muted);max-width:62ch}
+.pbody{padding:8px 26px 8px}
+@media (max-width:520px){.phead,.pbody{padding-left:18px;padding-right:18px}}
+
+.q{padding-block:20px;border-bottom:1px dashed color-mix(in srgb,var(--rule) 35%,transparent);display:grid;gap:10px}
+.q:last-child{border-bottom:0}
+.q label.l,.q .l{font-weight:700;font-size:15.5px;display:block}
+.q .req{color:var(--red);margin-left:3px}
+.q .hint{font-size:13px;color:var(--muted);margin-top:-6px;max-width:64ch}
+.q.err .l{color:var(--red)}
+.q .msg{font-size:13px;color:var(--red);font-weight:500}
+.sub{font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;background:var(--ink);color:var(--paper);display:inline-block;padding:3px 8px;margin-top:22px;justify-self:start}
+
+input[type=text],input[type=url],input[type=email],input[type=tel],input[type=date],textarea,select{
+  width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--rule);border-radius:0;padding:11px 12px;min-width:0}
+textarea{min-height:96px;resize:vertical}
+textarea.tall{min-height:180px}
+input:focus,textarea:focus,select:focus{outline:3px solid var(--lime);outline-offset:0;border-color:var(--ink)}
+::placeholder{color:var(--muted);opacity:.8}
+
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font:inherit;font-size:14px;border:1.5px solid var(--rule);background:var(--paper);color:var(--ink);padding:8px 13px;cursor:pointer;border-radius:0;transition:transform .08s}
+.chip:hover{transform:translate(-1px,-1px);box-shadow:2px 2px 0 var(--ink)}
+.chip[aria-pressed="true"]{background:var(--lime);color:var(--on-lime);border-color:var(--ink);font-weight:700}
+.chip:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+.card{font:inherit;text-align:left;border:2px solid var(--rule);background:var(--paper);color:var(--ink);padding:14px;cursor:pointer;display:grid;gap:4px;border-radius:0}
+.card b{font-family:var(--display);font-weight:400;font-size:20px;text-transform:uppercase;letter-spacing:.01em}
+.card span{font-size:13px;color:var(--muted)}
+.card[aria-pressed="true"]{background:var(--ink);color:var(--paper);box-shadow:5px 5px 0 var(--red)}
+.card[aria-pressed="true"] span{color:var(--lime)}
+.card:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+
+/* Repeater */
+.rep{display:grid;gap:10px}
+.rrow{border:1.5px solid var(--rule);padding:12px;display:grid;gap:8px;background:var(--paper)}
+.rgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.rrow .rh{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.rrow input,.rrow select{background:var(--panel);padding:9px 10px}
+.mini{font:inherit;font-size:13px;background:none;border:0;color:var(--red);cursor:pointer;text-decoration:underline;padding:2px}
+.add{font:inherit;font-weight:700;justify-self:start;border:1.5px dashed var(--rule);background:transparent;color:var(--ink);padding:9px 14px;cursor:pointer}
+.add:hover{background:var(--lime);color:var(--on-lime);border-style:solid}
+
+/* Footer nav */
+.pfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 26px;border-top:2px solid var(--rule);flex-wrap:wrap}
+@media (max-width:520px){.pfoot{padding-left:18px;padding-right:18px}}
+.saved{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.b{font:inherit;font-weight:700;font-size:15px;padding:12px 20px;border:2px solid var(--rule);cursor:pointer;border-radius:0;background:var(--paper);color:var(--ink)}
+.b.primary{background:var(--red);color:var(--on-red);border-color:var(--red);box-shadow:4px 4px 0 var(--ink)}
+.b.primary:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.b:focus-visible{outline:3px solid var(--lime);outline-offset:2px}
+.b:disabled{opacity:.5;cursor:not-allowed}
+
+/* Review */
+.brief{font-family:var(--mono);font-size:13px;line-height:1.6;white-space:pre-wrap;background:var(--paper);border:1.5px solid var(--rule);padding:16px;max-height:520px;overflow:auto;word-break:break-word}
+.status{font-size:14px;font-weight:500;padding:10px 12px;border:1.5px solid var(--rule);background:var(--soft)}
+.status.ok{background:var(--lime);color:var(--on-lime)}
+.status.bad{border-color:var(--red);color:var(--red)}
+.ready{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:6px}
+.ready div{border:1.5px solid var(--rule);padding:10px 12px;font-size:13.5px}
+.ready b{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+/* Inbox */
+.inbox{display:grid;gap:12px}
+.sub-item{border:2px solid var(--rule);background:var(--panel)}
+.sub-item summary{cursor:pointer;padding:14px 16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;list-style:none}
+.sub-item summary::-webkit-details-marker{display:none}
+.sub-item summary b{font-family:var(--display);font-weight:400;font-size:22px;text-transform:uppercase}
+.sub-item summary span{font-family:var(--mono);font-size:12px;color:var(--muted);align-self:center}
+.sub-item .in{padding:0 16px 16px;display:grid;gap:10px}
+.tag{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;background:var(--lime);color:var(--on-lime);padding:2px 7px;margin-left:8px;vertical-align:middle}
+.empty{border:2px dashed var(--rule);padding:22px;color:var(--muted)}
+.brand a{color:inherit;text-decoration:none}
+.brand a:hover{text-decoration:underline}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+
+<header class="band">
+  <div class="wrap">
+    <div>
+      <div class="brand"><a href="/"><b>BCB</b> Better Call Bot</a> · Client Discovery</div>
+      <h1>Brief your <span>AI agent</span></h1>
+      <p>About 10 minutes, mostly taps. Your answers become the playbook your AI support agent follows from day one of your free trial.</p>
+    </div>
+    <div class="meta">
+      <span class="pill" id="etaPill">~10 min</span>
+      <button class="pill btn" id="resetBtn" type="button">Start over</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="mbar"><div class="row"><span id="mStep">Step 1</span><span id="mPct">0%</span></div><div class="track"><i id="mTrack" style="width:0%"></i></div></div>
+  <div class="grid">
+    <nav class="rail" aria-label="Form steps">
+      <ol id="rail"></ol>
+      <p class="railnote">Progress saves on this device. Close the tab and come back anytime.</p>
+    </nav>
+    <main id="main"></main>
+  </div>
+</div>
+
+<script>
+(function(){
+const KEY="bcb-discovery-draft-v1";
+// Google Apps Script web app that appends each submission to the "BCB Discovery Submissions" sheet.
+// See integrations/discovery-form-apps-script.gs for the script and setup steps.
+const SUBMIT_URL="";
+let A={}; let step=0; let maxReached=0; let view="form";
+try{const s=JSON.parse(localStorage.getItem(KEY)||"null"); if(s){A=s.A||{};step=s.step||0;maxReached=s.max||0;}}catch(e){}
+
+const isP=a=>a.biz_type==="product"||a.biz_type==="hybrid";
+const isS=a=>a.biz_type==="service"||a.biz_type==="hybrid";
+const isR=a=>a.biz_type==="restaurant";
+const has=(id,v)=>Array.isArray(A[id])&&A[id].includes(v);
+const L=arr=>arr.map(x=>Array.isArray(x)?x:[x,x]);
+
+const TYPE_LABEL={product:"Product seller",service:"Service business",restaurant:"Restaurant / food",hybrid:"Products + services"};
+
+const STEPS=[
+{key:"basics",title:()=>"The basics",intro:"Who you are and what kind of business you run. Your answer to the last question shapes the rest of the form.",qs:[
+  {id:"biz_name",type:"text",label:"Business name",req:true,ph:"e.g. Khaadi, Café Aylanto"},
+  {id:"contact_name",type:"text",label:"Your name and role",req:true,ph:"e.g. Sana Ahmed, Founder"},
+  {id:"contact_phone",type:"tel",label:"WhatsApp number",req:true,ph:"+92 3xx xxxxxxx"},
+  {id:"contact_email",type:"email",label:"Email",ph:"you@brand.com"},
+  {id:"website",type:"url",label:"Website or store link",hint:"Instagram page is fine if you don't have a website.",ph:"https://"},
+  {id:"locations",type:"text",label:"Cities or areas you serve",ph:"e.g. Karachi & Lahore, nationwide delivery"},
+  {id:"pitch",type:"textarea",label:"Describe your business in two lines, the way you'd explain it to a new customer",req:true,ph:"We make handmade leather bags for working women. Every bag is made to order in 5–7 days."},
+  {id:"biz_type",type:"cards",label:"What do you sell?",req:true,opts:[["product","Products","Physical goods, online store, ecommerce"],["service","Services","Salons, clinics, agencies, travel, education, contractors"],["restaurant","Food","Restaurant, café, cloud kitchen, bakery, catering"],["hybrid","Both","Products and services, e.g. a salon that sells haircare"]]},
+  {id:"svc_kind",type:"single",label:"What kind of service?",req:true,show:isS,opts:L([["appt","Appointments (salon, clinic, gym, spa)"],["project","Projects & quotes (agency, contractor, events, interiors)"],["travel","Travel & tours"],["edu","Courses & education"],["sub","Subscriptions & memberships"],["other","Something else"]])},
+]},
+{key:"customers",title:()=>"Customers & channels",intro:"Where your customers reach you and how they talk. This decides where we install the agent and which languages it answers in.",qs:[
+  {id:"channels",type:"multi",label:"Where do customers message you?",req:true,opts:L(["WhatsApp Business","Instagram DMs","Facebook Messenger","Website chat","Email","TikTok"])},
+  {id:"volume",type:"single",label:"How many customer messages do you get per day, roughly?",req:true,opts:L(["Under 30","30–100","100–300","300+"])},
+  {id:"peak",type:"multi",label:"When are you busiest?",opts:L(["Morning","Afternoon","Evening","Late night (after 11pm)","Weekends","Sale / Eid season"])},
+  {id:"languages",type:"multi",label:"Which languages do customers write in?",hint:"Include voice notes. The agent understands text, voice notes and images in all of these.",req:true,opts:L(["English","Urdu","Roman Urdu","Punjabi","Sindhi","Pashto","Arabic","Other"])},
+  {id:"handler",type:"single",label:"Who answers customer messages today?",opts:L(["Me, the owner","One staff member","A team of 2+","Nobody consistently"])},
+  {id:"resp_time",type:"single",label:"How fast do customers usually get a reply today?",opts:L(["Under 5 minutes","Under 1 hour","Same day","Next day or later"])},
+]},
+{key:"catalog",title:a=>isR(a)?"Your menu":isS(a)&&!isP(a)?"Your services & pricing":isP(a)&&!isS(a)?"Your products":"Products & services",intro:"What the agent is allowed to talk about, and exactly how it handles prices.",qs:[
+  {id:"_p",type:"heading",label:"Products",show:a=>a.biz_type==="hybrid"},
+  {id:"platform",type:"single",label:"Where is your product catalog?",req:true,show:isP,opts:L(["Shopify","WooCommerce","Daraz","Custom website","Instagram only, no website"])},
+  {id:"api_ok",type:"single",label:"Can we connect the agent to your store so it reads live prices, stock and order status?",hint:"Read access only. This is how the agent always quotes the right price without us typing your catalog in.",req:true,show:a=>isP(a)&&["Shopify","WooCommerce","Custom website"].includes(a.platform),opts:L(["Yes, connect it","Yes, but let's talk first","No"])},
+  {id:"sku_count",type:"single",label:"How many products do you have?",show:isP,opts:L(["Under 50","50–300","300–1,000","1,000+"])},
+  {id:"store_accurate",type:"single",label:"Are prices and stock on your store kept up to date?",hint:"If yes, the agent treats your store as the source of truth for every price.",req:true,show:isP,opts:L(["Always","Mostly","Often out of date"])},
+  {id:"catalog_link",type:"url",label:"Link to your latest price list or catalog",hint:"Google Drive, PDF or sheet. We use this instead of the store.",req:true,show:a=>isP(a)&&(a.platform==="Instagram only, no website"||a.store_accurate==="Often out of date"),ph:"https://drive.google.com/…"},
+  {id:"size_guide",type:"url",label:"Size chart or variant guide link",show:isP,ph:"https://"},
+  {id:"bestsellers",type:"textarea",label:"Products you want the agent to recommend first",hint:"Bestsellers, new arrivals, high-margin items.",show:isP,ph:"Classic tote in black, Eid 2026 lawn collection…"},
+
+  {id:"_s",type:"heading",label:"Services",show:a=>a.biz_type==="hybrid"},
+  {id:"services",type:"repeater",label:"List your main services and set a price rule for each",hint:"This is where you control pricing. The agent follows the rule you pick on each row, nothing more. Leave the price blank if you never want it quoted.",req:true,show:isS,add:"Add a service",fields:[
+    {k:"name",label:"Service",ph:"e.g. Hydrafacial"},
+    {k:"price",label:"Price (Rs)",ph:"e.g. 8,500 or 5,000–9,000"},
+    {k:"rule",label:"Agent may…",type:"select",opts:["Quote the exact price","Say \"starting from\"","Give the range","Never quote, hand to team"]},
+    {k:"note",label:"Duration / what's included",ph:"60 min, includes consultation"}]},
+  {id:"price_default",type:"single",label:"If a customer asks about something not on this list, the agent should…",req:true,show:isS,opts:L(["Say pricing depends on details and collect them","Hand straight to the team","Share a general range only"])},
+  {id:"lead_fields",type:"multi",label:"Before passing an inquiry or quote to your team, the agent should collect:",hint:"So your team never has to ask the same questions twice.",show:isS,opts:L(["Name","Phone","Location / address","Preferred date","Budget","Project or requirement details","Photos / reference images","Number of people"])},
+
+  {id:"menu_link",type:"url",label:"Link to your full menu with prices",hint:"Website, Foodpanda page or a Drive PDF.",req:true,show:isR,ph:"https://"},
+  {id:"menu_accurate",type:"single",label:"How often do menu prices change?",show:isR,opts:L(["Rarely","Every few months","Often, check with us"])},
+  {id:"branches",type:"repeater",label:"Your branches",req:true,show:isR,add:"Add a branch",fields:[
+    {k:"name",label:"Branch / area",ph:"DHA Phase 6"},
+    {k:"address",label:"Address",ph:"Plot 12, Bukhari Comm."},
+    {k:"hours",label:"Hours",ph:"12pm–1am daily"},
+    {k:"phone",label:"Phone",ph:"021-xxxxxxx"}]},
+  {id:"deals",type:"textarea",label:"Deals or combos the agent can mention",show:isR,ph:"Midweek deal: 2 burgers + fries Rs 1,990 (Mon–Wed)"},
+  {id:"dietary",type:"multi",label:"Which of these can the agent confirm?",show:isR,opts:L(["Halal certified","Vegetarian options","Spice level can be adjusted","Allergen info available","Gluten-free options","Kids menu"])},
+]},
+{key:"orders",title:a=>isR(a)?"Orders & reservations":isS(a)&&!isP(a)?"Bookings & payments":"Orders, delivery & payments",intro:"What the agent can actually do for a customer, beyond answering questions.",qs:[
+  {id:"chat_orders",type:"single",label:"Should the agent take orders inside the chat?",req:true,show:isP,opts:L(["Yes, take full orders in chat","Collect details, our team confirms","No, send them to the website"])},
+  {id:"order_fields",type:"multi",label:"Details to collect for every order",show:a=>isP(a)&&a.chat_orders&&a.chat_orders!=="No, send them to the website",opts:L(["Full name","Phone","Full address","City","Size / variant","Quantity","Payment method","Email"])},
+  {id:"del_local",type:"text",label:"Delivery time and charges in your city",show:isP,ph:"Karachi: 1–2 days, Rs 200"},
+  {id:"del_national",type:"text",label:"Delivery time and charges to other cities",show:isP,ph:"Rest of Pakistan: 3–5 days, Rs 300"},
+  {id:"free_ship",type:"text",label:"Free delivery above (Rs)",show:isP,ph:"e.g. 5,000, or leave blank"},
+  {id:"intl",type:"single",label:"Do you ship internationally?",show:isP,opts:L(["No","Yes"])},
+  {id:"intl_details",type:"text",label:"International shipping: countries, time and charges",show:a=>isP(a)&&a.intl==="Yes",ph:"UK, US, UAE: 7–10 days, charges at checkout"},
+  {id:"couriers",type:"multi",label:"Courier partners",show:isP,opts:L(["TCS","Leopards","M&P","PostEx","Trax","BlueEX","Call Courier","Own riders","Other"])},
+  {id:"tracking",type:"single",label:"\"Where is my order?\" How should the agent answer?",hint:"This is usually the #1 question. Pick what's possible today.",req:true,show:isP,opts:L(["Look it up from the store and share tracking","Share the tracking link we sent by SMS","Collect order number, team replies"])},
+  {id:"cancel_window",type:"text",label:"Can customers change or cancel an order? Until when?",show:isP,ph:"Yes, until it's dispatched (usually within 24 hrs)"},
+
+  {id:"booking",type:"single",label:"How should the agent handle bookings or inquiries?",req:true,show:isS,opts:L(["Share our booking link","Collect details, our team confirms","Ask them to call us","No bookings, inquiries only"])},
+  {id:"booking_link",type:"url",label:"Booking link",req:true,show:a=>isS(a)&&a.booking==="Share our booking link",ph:"https://calendly.com/…"},
+  {id:"hours",type:"text",label:"Working days and hours",req:true,show:a=>isS(a),ph:"Tue–Sun, 11am–8pm. Closed Mondays"},
+  {id:"deposit",type:"text",label:"Advance or deposit required?",show:isS,ph:"50% advance to confirm, non-refundable"},
+  {id:"turnaround",type:"text",label:"Typical turnaround or lead time",show:a=>isS(a)&&["project","travel","other"].includes(a.svc_kind),ph:"Quotes in 24 hrs, projects start within 2 weeks"},
+
+  {id:"order_types",type:"multi",label:"How do customers order from you?",req:true,show:isR,opts:L(["Dine-in","Takeaway","Own delivery","Foodpanda","Other delivery apps"])},
+  {id:"chat_orders_r",type:"single",label:"Should the agent take food orders in chat?",req:true,show:isR,opts:L(["Yes, take full orders","Collect order, branch confirms","No, send to Foodpanda / website"])},
+  {id:"del_r",type:"text",label:"Delivery radius, minimum order, charges and usual time",show:isR,ph:"5 km, min Rs 1,500, Rs 150, 35–45 min"},
+  {id:"reservations",type:"single",label:"Do you take table reservations?",show:isR,opts:L(["Yes","No","Only for large groups"])},
+  {id:"res_details",type:"text",label:"Reservation rules",show:a=>isR(a)&&a.reservations&&a.reservations!=="No",ph:"Max 20 people, book 1 day ahead, Rs 5,000 deposit on weekends"},
+  {id:"catering",type:"single",label:"Do you do catering or private events?",show:isR,opts:L(["No","Yes, hand inquiries to team"])},
+
+  {id:"payments",type:"multi",label:"Payment methods you accept",req:true,opts:L(["Cash on delivery","Bank transfer","Debit / credit card","JazzCash","Easypaisa","Raast","Cash at venue"])},
+  {id:"cod_rules",type:"text",label:"Any cash-on-delivery rules?",show:a=>has("payments","Cash on delivery"),ph:"Advance required above Rs 15,000. No COD on sale items"},
+]},
+{key:"policies",title:()=>"Policies",intro:"The rules customers ask about most, written once so the agent never improvises.",qs:[
+  {id:"ret_window",type:"single",label:"Return or exchange window",req:true,show:isP,opts:L(["No returns","3 days","7 days","14 days","30 days"])},
+  {id:"ret_type",type:"multi",label:"What do you offer?",show:a=>isP(a)&&a.ret_window&&a.ret_window!=="No returns",opts:L(["Exchange","Store credit","Refund"])},
+  {id:"ret_cond",type:"textarea",label:"Conditions",show:a=>isP(a)&&a.ret_window&&a.ret_window!=="No returns",ph:"Unworn with tags. Sale items are final. Claims need an unboxing video."},
+  {id:"ret_ship",type:"single",label:"Who pays return shipping?",show:a=>isP(a)&&a.ret_window&&a.ret_window!=="No returns",opts:L(["We do","Customer","Depends on the reason"])},
+  {id:"refund_time",type:"text",label:"How and when do refunds reach the customer?",show:a=>isP(a)&&has("ret_type","Refund"),ph:"Bank transfer within 7 working days"},
+  {id:"discounts",type:"single",label:"Can the agent offer discounts?",req:true,show:a=>isP(a)||isR(a),opts:L(["Never","Only share active promo codes","Yes, up to a limit to save a sale"])},
+  {id:"codes",type:"text",label:"Active promo codes",show:a=>a.discounts==="Only share active promo codes",ph:"WELCOME10 (first order), EID15 until 15 Dec"},
+  {id:"disc_max",type:"text",label:"Maximum discount and when",show:a=>a.discounts==="Yes, up to a limit to save a sale",ph:"Up to 10%, only if the customer is about to drop off"},
+
+  {id:"cancel_s",type:"textarea",label:"Cancellation and rescheduling rules",req:true,show:isS,ph:"Free reschedule up to 24 hrs before. No-shows lose the deposit."},
+  {id:"guarantee",type:"text",label:"Guarantees, warranties or revisions you offer",show:isS,ph:"2 free revisions; 6-month workmanship warranty"},
+
+  {id:"complaint_r",type:"single",label:"If someone complains about their food, the agent should…",req:true,show:isR,opts:L(["Apologise and offer a replacement","Apologise and offer a refund","Apologise and hand to the manager"])},
+  {id:"policy_link",type:"url",label:"Link to your policies or FAQ page (if any)",ph:"https://"},
+]},
+{key:"voice",title:()=>"Voice & boundaries",intro:"How the agent sounds, and the lines it never crosses.",qs:[
+  {id:"agent_name",type:"text",label:"Should the agent have a name?",hint:"Optional. Customers are always told they're chatting with an assistant if they ask.",ph:"e.g. Zara from YourBrand"},
+  {id:"tone",type:"single",label:"Tone",req:true,opts:L(["Warm & friendly","Professional & polished","Fun & casual","Luxury & minimal"])},
+  {id:"emoji",type:"single",label:"Emojis",opts:L(["Never","Sometimes","Freely"])},
+  {id:"lang_mode",type:"single",label:"Reply language",req:true,opts:L(["Match the customer's language","Always English","Always Urdu / Roman Urdu"])},
+  {id:"never",type:"multi",label:"The agent must never…",hint:"Tick everything that applies. These become hard rules.",opts:a=>L(["Mention or compare competitors","Promise exact delivery dates","Approve refunds on its own","Share wholesale / bulk prices","Give medical, legal or health advice","Discuss politics or religion"].concat(isS(a)?["Quote prices outside the rules above"]:[]))},
+  {id:"never_other",type:"text",label:"Anything else it must never say or do?",ph:"Never confirm stock for pre-orders"},
+]},
+{key:"handoff",title:()=>"Handoff to your team",intro:"When the agent should step back and a human should take over the chat.",qs:[
+  {id:"triggers",type:"multi",label:"Hand the chat to a human when…",req:true,opts:a=>L(["Customer asks for a human","Customer is angry","Complaint or damaged item","Refund request","Payment problem","Bulk or wholesale order","Order above a set value"].concat(isS(a)?["Custom quote requested"]:[]).concat(isR(a)?["Event or catering inquiry"]:[]))},
+  {id:"trig_value",type:"text",label:"Hand over orders above (Rs)",req:true,show:a=>has("triggers","Order above a set value"),ph:"50,000"},
+  {id:"ho_contact",type:"text",label:"Who receives handed-off chats? Name and WhatsApp",req:true,ph:"Bilal (ops) +92 3xx xxxxxxx"},
+  {id:"team_hours",type:"text",label:"When is your team online?",req:true,ph:"Mon–Sat, 10am–7pm"},
+  {id:"offhours",type:"single",label:"When nobody's online, the agent should…",req:true,opts:L(["Tell them when the team is back","Collect details and promise a callback","Keep helping and flag it for the morning"])},
+  {id:"reply_promise",type:"text",label:"Response time the agent can promise for handed-off chats",ph:"Within 2 hours during working hours"},
+]},
+{key:"feed",title:()=>"Feed the agent",intro:"The single most useful part. Real questions and your real answers make the trial sound like you from the first message.",qs:[
+  {id:"faq",type:"textarea",cls:"tall",label:"Your 10 most-asked questions, with the answer you'd give",hint:"Write them how customers actually ask, Roman Urdu included. Rough is fine.",req:true,ph:"Q: Price kya hai? / Is this available in medium?\nA: …\n\nQ: COD available hai Lahore mein?\nA: …"},
+  {id:"misconceptions",type:"textarea",label:"What do customers often get wrong or confuse?",ph:"They think the price includes stitching. It doesn't."},
+  {id:"docs_link",type:"url",label:"Google Drive folder with anything useful",hint:"Catalog, price lists, policies, brochures, past chat screenshots.",ph:"https://drive.google.com/…"},
+  {id:"chats_ok",type:"single",label:"Can you share 20–50 recent customer chats?",hint:"Screenshots or exports. They teach the agent your tone and the questions you really get. We remove phone numbers before use.",opts:L(["Yes","Yes, after we remove personal details","No"])},
+  {id:"goals",type:"multi",label:"What should the free trial prove?",req:true,opts:L(["Faster replies","Coverage after hours","More sales from chat","Less load on my staff","No missed messages","Better reviews"])},
+  {id:"start",type:"date",label:"Preferred trial start date"},
+  {id:"anything",type:"textarea",label:"Anything else we should know?",ph:"Upcoming sale, new branch, a type of customer to watch out for…"},
+]},
+];
+
+const REVIEW=STEPS.length;
+const visibleQs=s=>s.qs.filter(q=>!q.show||q.show(A));
+const optsOf=q=>typeof q.opts==="function"?q.opts(A):q.opts;
+const empty=v=>v==null||v===""||(Array.isArray(v)&&v.length===0);
+function valid(q){
+  if(!q.req)return true;
+  if(q.type==="repeater")return Array.isArray(A[q.id])&&A[q.id].some(r=>r&&r.name&&r.name.trim());
+  const v=A[q.id];return !empty(typeof v==="string"?v.trim():v);
+}
+const stepValid=i=>visibleQs(STEPS[i]).every(valid);
+
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify({A,step,max:maxReached}));}catch(e){}
+  const s=document.getElementById("savedNote"); if(s){s.textContent="Saved "+new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});}
+}
+
+/* ---------- Rail ---------- */
+function renderRail(){
+  const ol=document.getElementById("rail"); ol.innerHTML="";
+  const all=STEPS.map(s=>s.title(A)).concat(["Review & send"]);
+  all.forEach((t,i)=>{
+    const li=document.createElement("li");
+    if(i===step&&view==="form")li.className="on";
+    else if(i<REVIEW&&i<maxReached&&stepValid(i))li.className="done";
+    if(i>maxReached)li.classList.add("locked");
+    const b=document.createElement("button");b.type="button";
+    b.innerHTML='<span class="n">'+String(i+1).padStart(2,"0")+'</span><span></span>';
+    b.lastChild.textContent=t;
+    b.onclick=()=>{ if(i<=maxReached){view="form";go(i);} };
+    li.appendChild(b);ol.appendChild(li);
+  });
+  const pct=Math.round(step/REVIEW*100);
+  document.getElementById("mStep").textContent=view==="form"?("Step "+(step+1)+" of "+(REVIEW+1)+" · "+all[step]):"";
+  document.getElementById("mPct").textContent=pct+"%";
+  document.getElementById("mTrack").style.width=pct+"%";
+}
+
+/* ---------- Field builders ---------- */
+function el(tag,attrs,text){const e=document.createElement(tag);if(attrs)for(const k in attrs){if(k==="class")e.className=attrs[k];else e.setAttribute(k,attrs[k]);}if(text!=null)e.textContent=text;return e;}
+
+function renderQ(q){
+  if(q.type==="heading"){return el("div",{class:"sub"},q.label);}
+  const wrap=el("div",{class:"q",id:"q-"+q.id});
+  const lab=el(["text","tel","email","url","textarea","date"].includes(q.type)?"label":"div",{class:"l"});
+  if(lab.tagName==="LABEL")lab.setAttribute("for","f-"+q.id);
+  lab.textContent=q.label; if(q.req){const r=el("span",{class:"req","aria-hidden":"true"},"*");lab.appendChild(r);}
+  wrap.appendChild(lab);
+  if(q.hint)wrap.appendChild(el("div",{class:"hint"},q.hint));
+
+  if(["text","tel","email","url","date"].includes(q.type)){
+    const i=el("input",{type:q.type,id:"f-"+q.id,placeholder:q.ph||""});i.value=A[q.id]||"";
+    i.oninput=()=>{A[q.id]=i.value;clearErr(wrap);save();};
+    wrap.appendChild(i);
+  }else if(q.type==="textarea"){
+    const t=el("textarea",{id:"f-"+q.id,placeholder:q.ph||""});if(q.cls)t.className=q.cls;t.value=A[q.id]||"";
+    t.oninput=()=>{A[q.id]=t.value;clearErr(wrap);save();};
+    wrap.appendChild(t);
+  }else if(q.type==="single"||q.type==="multi"){
+    const box=el("div",{class:"chips",role:"group"});
+    optsOf(q).forEach(([v,lbl],k)=>{
+      const on=q.type==="multi"?has(q.id,v):A[q.id]===v;
+      const b=el("button",{type:"button",class:"chip","aria-pressed":on?"true":"false",id:"f-"+q.id+"-"+k},lbl);
+      b.onclick=()=>{
+        if(q.type==="multi"){const arr=Array.isArray(A[q.id])?A[q.id].slice():[];const ix=arr.indexOf(v);ix>=0?arr.splice(ix,1):arr.push(v);A[q.id]=arr;}
+        else A[q.id]=A[q.id]===v&&!q.req?"":v;
+        save();rerender(b.id);
+      };
+      box.appendChild(b);
+    });
+    wrap.appendChild(box);
+  }else if(q.type==="cards"){
+    const box=el("div",{class:"cards",role:"group"});
+    q.opts.forEach(([v,t,d],k)=>{
+      const b=el("button",{type:"button",class:"card","aria-pressed":A[q.id]===v?"true":"false",id:"f-"+q.id+"-"+k});
+      b.appendChild(el("b",null,t));b.appendChild(el("span",null,d));
+      b.onclick=()=>{A[q.id]=v;save();rerender(b.id);};
+      box.appendChild(b);
+    });
+    wrap.appendChild(box);
+  }else if(q.type==="repeater"){
+    if(!Array.isArray(A[q.id])||!A[q.id].length)A[q.id]=[{}];
+    const rep=el("div",{class:"rep"});
+    A[q.id].forEach((row,ri)=>{
+      const r=el("div",{class:"rrow"});
+      const h=el("div",{class:"rh"});h.appendChild(el("span",null,"#"+(ri+1)));
+      if(A[q.id].length>1){const x=el("button",{type:"button",class:"mini"},"Remove");x.onclick=()=>{A[q.id].splice(ri,1);save();rerender();};h.appendChild(x);}
+      r.appendChild(h);
+      const g=el("div",{class:"rgrid"});
+      q.fields.forEach(f=>{
+        const fid="f-"+q.id+"-"+ri+"-"+f.k;
+        const cell=el("div",{style:"display:grid;gap:4px;min-width:0"});
+        const fl=el("label",{for:fid,style:"font-size:12.5px;color:var(--muted)"},f.label);cell.appendChild(fl);
+        let inp;
+        if(f.type==="select"){inp=el("select",{id:fid});f.opts.forEach(o=>{const op=el("option",{value:o},o);inp.appendChild(op);});if(!row[f.k])row[f.k]=f.opts[0];inp.value=row[f.k];inp.onchange=()=>{row[f.k]=inp.value;save();};}
+        else{inp=el("input",{type:"text",id:fid,placeholder:f.ph||""});inp.value=row[f.k]||"";inp.oninput=()=>{row[f.k]=inp.value;clearErr(wrap);save();};}
+        cell.appendChild(inp);g.appendChild(cell);
+      });
+      r.appendChild(g);rep.appendChild(r);
+    });
+    const add=el("button",{type:"button",class:"add",id:"f-"+q.id+"-add"},"+ "+(q.add||"Add row"));
+    add.onclick=()=>{A[q.id].push({});save();rerender("f-"+q.id+"-"+(A[q.id].length-1)+"-"+q.fields[0].k);};
+    rep.appendChild(add);wrap.appendChild(rep);
+  }
+  return wrap;
+}
+function clearErr(w){w.classList.remove("err");const m=w.querySelector(".msg");if(m)m.remove();}
+
+/* ---------- Main render ---------- */
+function render(){
+  renderRail();
+  const main=document.getElementById("main");main.innerHTML="";
+  if(step>=REVIEW){renderReview(main);return;}
+  const s=STEPS[step];
+  const p=el("section",{class:"panel","aria-labelledby":"stepTitle"});
+  const h=el("div",{class:"phead"});
+  let eb="Step "+(step+1)+" of "+(REVIEW+1);
+  if(step>0&&A.biz_type)eb+=" · "+TYPE_LABEL[A.biz_type];
+  h.appendChild(el("div",{class:"eyebrow"},eb));
+  h.appendChild(el("h2",{id:"stepTitle"},s.title(A)));
+  h.appendChild(el("p",null,s.intro));
+  p.appendChild(h);
+  const body=el("div",{class:"pbody"});
+  visibleQs(s).forEach(q=>body.appendChild(renderQ(q)));
+  p.appendChild(body);
+  const f=el("div",{class:"pfoot"});
+  f.appendChild(el("span",{class:"saved",id:"savedNote"},"Progress saves automatically"));
+  const bs=el("div",{class:"btns"});
+  if(step>0){const bk=el("button",{type:"button",class:"b"},"Back");bk.onclick=()=>go(step-1);bs.appendChild(bk);}
+  const nx=el("button",{type:"button",class:"b primary"},step===REVIEW-1?"Review answers":"Continue");
+  nx.onclick=next;bs.appendChild(nx);f.appendChild(bs);p.appendChild(f);
+  main.appendChild(p);
+}
+function rerender(focusId){
+  const y=window.scrollY;render();window.scrollTo(0,y);
+  if(focusId){const e=document.getElementById(focusId);if(e)e.focus({preventScroll:true});}
+}
+function go(i){step=i;if(step>maxReached)maxReached=step;save();render();
+  const top=document.querySelector(".grid");if(top&&window.scrollY>top.offsetTop)window.scrollTo({top:top.offsetTop-8,behavior:"smooth"});}
+function next(){
+  const bad=visibleQs(STEPS[step]).filter(q=>!valid(q));
+  if(bad.length){
+    bad.forEach(q=>{const w=document.getElementById("q-"+q.id);if(!w)return;w.classList.add("err");if(!w.querySelector(".msg"))w.appendChild(el("div",{class:"msg"},q.type==="repeater"?"Add at least one row with a name.":"This one's needed to set up your agent."));});
+    const first=document.getElementById("q-"+bad[0].id);if(first){first.scrollIntoView({behavior:"smooth",block:"center"});const f=first.querySelector("input,textarea,button");if(f)f.focus({preventScroll:true});}
+    return;
+  }
+  go(step+1);
+}
+
+/* ---------- Brief (Markdown) ---------- */
+function fmt(q,v){
+  if(q.type==="repeater"){
+    const rows=(v||[]).filter(r=>r&&Object.values(r).some(x=>x&&String(x).trim()));
+    if(!rows.length)return null;
+    return rows.map(r=>"  - "+q.fields.map(f=>r[f.k]?(f.type==="select"?"**["+String(r[f.k]).toUpperCase()+"]**":r[f.k]):null).filter(Boolean).join(" — ")).join("\n");
+  }
+  if(q.type==="cards"){const o=q.opts.find(o=>o[0]===v);return o?o[1]:v;}
+  if(Array.isArray(v))return v.length?v.join(", "):null;
+  if(typeof v==="string"){const t=v.trim();if(!t)return null;if(q.type==="single"){const o=optsOf(q).find(o=>o[0]===t);return o?o[1]:t;}return t;}
+  return v==null?null:String(v);
+}
+function buildBrief(){
+  const lines=[];
+  lines.push("# Better Call Bot — Agent Discovery Brief");
+  lines.push("");
+  lines.push("**"+(A.biz_name||"Unnamed business")+"** · "+(TYPE_LABEL[A.biz_type]||"—"));
+  lines.push("");
+  lines.push("_Submitted "+new Date().toLocaleString()+"_");
+  STEPS.forEach((s,i)=>{
+    const qs=visibleQs(s).filter(q=>q.type!=="heading");
+    const out=[];
+    qs.forEach(q=>{const v=fmt(q,A[q.id]);if(v!=null){out.push(q.type==="repeater"||(q.type==="textarea"&&v.includes("\n"))?("- **"+q.label+":**\n"+(q.type==="repeater"?v:v.split("\n").map(l=>"    "+l).join("\n"))):("- **"+q.label+":** "+v));}});
+    if(out.length){lines.push("");lines.push("## "+String(i+1).padStart(2,"0")+" "+s.title(A));lines.push("");lines.push(out.join("\n"));}
+  });
+  // Agent rules digest
+  const r=[];
+  if(isP(A)){r.push("Prices & stock: "+(A.store_accurate==="Often out of date"||A.platform==="Instagram only, no website"?"use the shared price list, not the store":"read live from "+(A.platform||"store")+" via API"));}
+  if(isS(A)&&Array.isArray(A.services)){A.services.filter(x=>x&&x.name).forEach(x=>r.push("Price rule · "+x.name+": "+(x.rule||"Quote the exact price")+(x.price&&x.rule!=="Never quote, hand to team"?" ("+x.price+")":"")));if(A.price_default)r.push("Unlisted services: "+A.price_default);}
+  if(A.discounts)r.push("Discounts: "+A.discounts);
+  if(Array.isArray(A.never)&&A.never.length)r.push("Never: "+A.never.join("; ")+(A.never_other?"; "+A.never_other:""));
+  if(Array.isArray(A.triggers)&&A.triggers.length)r.push("Handoff when: "+A.triggers.join("; ")+(A.trig_value?" (threshold Rs "+A.trig_value+")":"")+" → "+(A.ho_contact||"team"));
+  if(A.offhours)r.push("Off-hours: "+A.offhours+(A.team_hours?" (team online "+A.team_hours+")":""));
+  if(A.lang_mode)r.push("Language: "+A.lang_mode+" · Tone: "+(A.tone||"—")+" · Emojis: "+(A.emoji||"—"));
+  if(r.length){lines.push("");lines.push("## Agent rules digest");lines.push("");lines.push(r.map(x=>"- "+x).join("\n"));}
+  return lines.join("\n");
+}
+
+/* ---------- Review ---------- */
+let sent=false;
+function renderReview(main){
+  const brief=buildBrief();
+  const p=el("section",{class:"panel"});
+  const h=el("div",{class:"phead"});
+  h.appendChild(el("div",{class:"eyebrow"},"Step "+(REVIEW+1)+" of "+(REVIEW+1)+" · Almost done"));
+  h.appendChild(el("h2",null,sent?"Thank you!":"Review & send"));
+  h.appendChild(el("p",null,sent?"Your brief is with the Better Call Bot team. We'll reach out on WhatsApp to set up your free trial agent.":"This is the brief your agent will be built from. Check it, then send it to the Better Call Bot team."));
+  p.appendChild(h);
+  const body=el("div",{class:"pbody",style:"display:grid;gap:16px;padding-block:20px"});
+  const missing=STEPS.map((s,i)=>stepValid(i)?null:i).filter(x=>x!=null);
+  if(missing.length){
+    const st=el("div",{class:"status bad"},"A few required answers are missing in: "+missing.map(i=>STEPS[i].title(A)).join(", ")+". ");
+    const fix=el("button",{type:"button",class:"mini"},"Go fix them");fix.onclick=()=>go(missing[0]);st.appendChild(fix);
+    body.appendChild(st);
+  }
+  const rd=el("div",{class:"ready"});
+  [["Business",(A.biz_name||"—")+" · "+(TYPE_LABEL[A.biz_type]||"—")],["Channels",(A.channels||[]).join(", ")||"—"],["Volume",A.volume?A.volume+" / day":"—"],["Handoff to",A.ho_contact||"—"]].forEach(([k,v])=>{const d=el("div");d.appendChild(el("b",null,k));d.appendChild(document.createTextNode(v));rd.appendChild(d);});
+  body.appendChild(rd);
+  const pre=el("pre",{class:"brief",id:"briefText",tabindex:"0"});pre.textContent=brief;body.appendChild(pre);
+  const st=el("div",{class:"status"+(sent?" ok":""),id:"sendStatus",role:"status"},
+    sent?"Sent. You can close this page."
+      :SUBMIT_URL?"Press Submit to send your brief to the Better Call Bot team."
+      :"Copy the brief and send it to your Better Call Bot contact on WhatsApp or email.");
+  body.appendChild(st);
+  p.appendChild(body);
+  const f=el("div",{class:"pfoot"});
+  const bk=el("button",{type:"button",class:"b"},"Back");bk.onclick=()=>go(REVIEW-1);f.appendChild(bk);
+  const bs=el("div",{class:"btns"});
+  const cp=el("button",{type:"button",class:"b"+(SUBMIT_URL?"":" primary")},"Copy brief");
+  cp.onclick=()=>{
+    const ok=()=>{st.className="status ok";st.textContent="Copied. Paste it into your chat with Better Call Bot.";};
+    const fallback=()=>{const rg=document.createRange();rg.selectNodeContents(pre);const sel=getSelection();sel.removeAllRanges();sel.addRange(rg);st.className="status";st.textContent="Text selected. Press Ctrl/Cmd + C to copy.";};
+    try{navigator.clipboard.writeText(brief).then(ok,fallback);}catch(e){fallback();}
+  };
+  bs.appendChild(cp);
+  if(SUBMIT_URL){const sv=el("button",{type:"button",class:"b primary"},sent?"Submitted":"Submit");
+    sv.disabled=sent||missing.length>0;
+    sv.onclick=async()=>{
+      sv.disabled=true;sv.textContent="Sending…";
+      const payload={submittedAt:new Date().toISOString(),biz_name:A.biz_name||"",biz_type:TYPE_LABEL[A.biz_type]||"",contact:A.contact_name||"",phone:A.contact_phone||"",email:A.contact_email||"",website:A.website||"",channels:(A.channels||[]).join(", "),volume:A.volume||"",goals:(A.goals||[]).join(", "),start:A.start||"",brief,answers:A};
+      try{
+        // text/plain keeps this a "simple" request so Apps Script accepts it without a CORS preflight
+        await fetch(SUBMIT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(payload)});
+        sent=true;
+        try{localStorage.removeItem(KEY);}catch(e){}
+        render();
+      }catch(e){
+        st.className="status bad";st.textContent="Couldn't send it (check your connection). Try again, or copy the brief and send it to Better Call Bot on WhatsApp.";sv.textContent="Submit";sv.disabled=false;
+      }
+    };
+    bs.appendChild(sv);}
+  f.appendChild(bs);p.appendChild(f);main.appendChild(p);
+}
+
+/* ---------- Header actions ---------- */
+let resetArm=false;
+document.getElementById("resetBtn").onclick=e=>{
+  const b=e.currentTarget;
+  if(!resetArm){resetArm=true;b.textContent="Tap again to clear";setTimeout(()=>{resetArm=false;b.textContent="Start over";},3000);return;}
+  A={};step=0;maxReached=0;view="form";sent=false;resetArm=false;b.textContent="Start over";
+  try{localStorage.removeItem(KEY);}catch(err){}
+  render();
+};
+
+render();
+})();
+</script>
+
+</body></html>

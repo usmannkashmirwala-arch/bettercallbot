@@ -69,12 +69,10 @@ export default function Hero({ onBookAudit }: HeroProps) {
             BOOK A FREE AUDIT →
           </button>
           <a
-            href="https://wa.me/18317776194"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-['DM_Sans'] text-sm tracking-[0.12em] uppercase font-semibold border border-[#111111] bg-transparent text-[#111111] px-7 py-4 cursor-pointer whitespace-nowrap hover:bg-[#111111] hover:text-[#F5F4F0] transition-colors inline-block"
+            href="/discovery/"
+            className="font-['DM_Sans'] text-sm tracking-[0.12em] uppercase font-semibold border border-[#111111] bg-transparent text-[#111111] px-7 py-4 cursor-pointer text-center sm:whitespace-nowrap hover:bg-[#111111] hover:text-[#F5F4F0] transition-colors inline-block"
           >
-            Test Our Agent →
+            Fill in a discovery form for a free trial →
           </a>
         </div>
 
